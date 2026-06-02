@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roteiro Orlando 2026 · 15 Anos da Nathalia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FBF5EA;
+    --ink:#241B12;
+    --coral:#E8623D;
+    --coral-deep:#C23E1E;
+    --teal:#157C7E;
+    --teal-deep:#0E5A5C;
+    --gold:#C79A3D;
+    --plum:#9C3262;
+    --night:#1C2230;
+    --line:#E2D5BF;
+    --shadow:rgba(36,27,18,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Public Sans',sans-serif;
+    line-height:1.62;
+    font-size:17px;
+    overflow-x:hidden;
+  }
+  /* subtle grain */
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.035;
+    background-image:radial-gradient(var(--ink) .5px,transparent .5px);
+    background-size:4px 4px;
+  }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;line-height:1.08;font-weight:900}
+  .serif-it{font-family:'Fraunces',serif;font-style:italic;font-weight:500}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;color:var(--cream);overflow:hidden;
+    background:
+      radial-gradient(900px 500px at 80% -10%, rgba(232,98,61,.55), transparent 60%),
+      radial-gradient(700px 600px at 5% 110%, rgba(21,124,126,.55), transparent 55%),
+      linear-gradient(160deg,#241B12 0%, #2E2336 55%, #1C2230 100%);
+    padding:88px 0 72px;
+  }
+  .hero .wrap{position:relative;z-index:2}
+  .kicker{
+    font-family:'Public Sans',sans-serif;font-weight:700;letter-spacing:.32em;
+    text-transform:uppercase;font-size:.72rem;color:var(--gold);margin-bottom:22px;
+  }
+  .hero h1{font-size:clamp(2.8rem,7vw,5.2rem);letter-spacing:-.02em}
+  .hero h1 em{font-style:italic;font-weight:500;color:var(--coral)}
+  .hero .sub{
+    font-family:'Fraunces',serif;font-style:italic;font-size:clamp(1.1rem,2.4vw,1.5rem);
+    color:rgba(251,245,234,.85);margin-top:18px;max-width:620px;
+  }
+  .hero-meta{
+    display:flex;flex-wrap:wrap;gap:14px;margin-top:38px;
+  }
+  .chip{
+    border:1px solid rgba(251,245,234,.28);border-radius:999px;
+    padding:9px 18px;font-size:.82rem;font-weight:500;backdrop-filter:blur(4px);
+    background:rgba(255,255,255,.05);
+  }
+  .chip b{color:var(--gold);font-weight:700}
+  .balloon{position:absolute;border-radius:50%;filter:blur(2px);opacity:.5;z-index:1}
+
+  /* ---------- NAV ---------- */
+  nav.toc{
+    position:sticky;top:0;z-index:20;background:rgba(251,245,234,.92);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+  }
+  nav.toc .inner{display:flex;gap:6px;overflow-x:auto;padding:12px 24px;max-width:1080px;margin:0 auto}
+  nav.toc a{
+    white-space:nowrap;text-decoration:none;color:var(--ink);font-size:.8rem;font-weight:700;
+    padding:7px 14px;border-radius:999px;transition:.2s;letter-spacing:.01em;
+  }
+  nav.toc a:hover{background:var(--coral);color:var(--cream)}
+
+  /* ---------- SECTIONS ---------- */
+  section{padding:64px 0;position:relative;z-index:2}
+  section + section{border-top:1px solid var(--line)}
+  .sec-num{
+    font-family:'Fraunces',serif;font-style:italic;color:var(--coral);
+    font-size:1.05rem;font-weight:600;display:block;margin-bottom:6px;
+  }
+  section h2{font-size:clamp(2rem,4.6vw,3rem);letter-spacing:-.015em;margin-bottom:10px}
+  section h2 .u{background:linear-gradient(transparent 62%, rgba(199,154,61,.45) 62%)}
+  .lead{font-size:1.12rem;color:#4a3c2c;max-width:760px;margin-bottom:30px}
+
+  h3{font-size:1.42rem;margin:34px 0 12px;letter-spacing:-.01em}
+  h4{font-size:1.08rem;margin:18px 0 6px}
+  p{margin-bottom:14px}
+  ul{margin:0 0 16px 0;padding-left:0;list-style:none}
+  li{margin-bottom:9px;padding-left:26px;position:relative}
+  li::before{content:"";position:absolute;left:4px;top:.62em;width:8px;height:8px;border-radius:2px;
+    background:var(--teal);transform:rotate(45deg)}
+  strong{font-weight:700}
+
+  /* callouts */
+  .why{
+    background:linear-gradient(180deg,#fff 0%,#FBF3E4 100%);
+    border-left:5px solid var(--coral);border-radius:0 14px 14px 0;
+    padding:18px 22px;margin:20px 0;box-shadow:0 10px 30px -18px var(--shadow);
+  }
+  .why .tag{font-family:'Fraunces',serif;font-style:italic;color:var(--coral-deep);font-weight:600;display:block;margin-bottom:4px}
+  .tip{background:#EAF4F2;border-left:5px solid var(--teal);border-radius:0 14px 14px 0;padding:16px 20px;margin:18px 0}
+  .tip .tag{font-weight:700;color:var(--teal-deep);display:block;margin-bottom:3px;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+  .warn{background:#FBEFE6;border-left:5px solid var(--gold);border-radius:0 14px 14px 0;padding:16px 20px;margin:18px 0}
+  .warn .tag{font-weight:700;color:#9a7320;display:block;margin-bottom:3px;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+
+  /* tables */
+  .tbl-scroll{overflow-x:auto;margin:18px 0;border-radius:14px;box-shadow:0 14px 38px -24px var(--shadow)}
+  table{border-collapse:collapse;width:100%;min-width:520px;background:#fff;font-size:.92rem}
+  th,td{padding:12px 15px;text-align:left;border-bottom:1px solid var(--line)}
+  th{background:var(--night);color:var(--cream);font-family:'Public Sans';font-weight:700;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase}
+  tr:last-child td{border-bottom:none}
+  td.num{font-variant-numeric:tabular-nums;font-weight:700;color:var(--teal-deep);white-space:nowrap}
+  tfoot td,tr.total td{background:#FBF3E4;font-weight:700;color:var(--ink)}
+  caption{caption-side:bottom;text-align:left;font-size:.78rem;color:#7a6a54;padding-top:8px;font-style:italic}
+
+  /* day cards */
+  .day{
+    display:grid;grid-template-columns:96px 1fr;gap:0;background:#fff;border:1px solid var(--line);
+    border-radius:16px;overflow:hidden;margin-bottom:14px;box-shadow:0 12px 32px -26px var(--shadow);
+  }
+  .day .date{
+    background:linear-gradient(165deg,var(--teal),var(--teal-deep));color:var(--cream);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px 8px;text-align:center;
+  }
+  .day.disney .date{background:linear-gradient(165deg,#3A6EA5,#264C77)}
+  .day.uni .date{background:linear-gradient(165deg,var(--coral),var(--coral-deep))}
+  .day.rest .date{background:linear-gradient(165deg,var(--gold),#9a7320)}
+  .day .date .d{font-family:'Fraunces',serif;font-size:1.9rem;font-weight:900;line-height:1}
+  .day .date .m{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;margin-top:3px;opacity:.9}
+  .day .date .w{font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;margin-top:7px;opacity:.8}
+  .day .body{padding:16px 20px}
+  .day .body h4{margin:0 0 4px;font-size:1.18rem}
+  .day .body .park{font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--coral-deep)}
+  .day.disney .body .park{color:#264C77}
+  .day.rest .body .park{color:#9a7320}
+  .day .body p{margin:6px 0 0;font-size:.93rem;color:#4a3c2c}
+
+  .pillrow{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 4px}
+  .pill{font-size:.74rem;font-weight:700;padding:5px 12px;border-radius:999px;background:#F2E7D2;color:#6b5535}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  @media(max-width:720px){.two{grid-template-columns:1fr}}
+
+  .big-figure{font-family:'Fraunces',serif;font-weight:900;font-size:clamp(2rem,6vw,3.4rem);color:var(--coral);line-height:1}
+  .figure-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;text-align:center;box-shadow:0 12px 32px -26px var(--shadow)}
+  .figure-card .lbl{font-size:.82rem;color:#6b5535;margin-top:6px;font-weight:600}
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:18px 0}
+  @media(max-width:720px){.grid3{grid-template-columns:1fr}}
+
+  footer{background:var(--night);color:rgba(251,245,234,.75);padding:46px 0;font-size:.86rem;position:relative;z-index:2}
+  footer .wrap{display:flex;flex-direction:column;gap:8px}
+  footer b{color:var(--gold)}
+  a.inline{color:var(--teal-deep);font-weight:700}
+
+  @keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+  .reveal{animation:rise .7s both}
+</style>
+<style>.sitenav{position:sticky;top:0;z-index:60;background:rgba(252,243,246,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,.08)}.sitenav .inner{display:flex;align-items:center;gap:6px;overflow-x:auto;padding:10px 20px;max-width:1080px;margin:0 auto}.sitenav .brand{font-family:Fraunces,serif;font-weight:900;font-size:.9rem;color:#9C3262;white-space:nowrap;margin-right:8px;text-decoration:none}.sitenav a{white-space:nowrap;text-decoration:none;color:#2A1B22;font-size:.78rem;font-weight:700;padding:6px 12px;border-radius:999px;transition:.2s}.sitenav a:hover{background:#9C3262;color:#fff}.sitenav a.active{background:#9C3262;color:#fff}</style>
+</head>
+<body>
+<nav class="sitenav"><div class="inner"><a class="brand" href="index.html">🏰 Orlando 2026</a>
+<a href="index.html">Início</a>
+<a href="plano-nathalia.html">Roteiro</a>
+<a href="guia-parques.html">Parques</a>
+<a href="dia-da-nathalia.html">Aniversário</a>
+<a href="cartao-reservas.html">Reservas</a>
+<a class="active" href="roteiro-orlando.html">Custos & Dicas</a><a href="album.html">Álbum</a>
+</div></nav>
+
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <span class="balloon" style="width:120px;height:150px;background:var(--coral);top:40px;right:8%"></span>
+  <span class="balloon" style="width:80px;height:100px;background:var(--gold);top:140px;right:22%"></span>
+  <span class="balloon" style="width:60px;height:78px;background:var(--plum);top:90px;right:34%"></span>
+  <div class="wrap reveal">
+    <span class="kicker">Consultoria de Viagem · Família Viana</span>
+    <h1>Orlando <em>2026</em><br>Os 15 anos da Nathalia</h1>
+    <p class="sub">18 dias na Flórida, 8 parques, uma estratégia desenhada para fugir das filas e transformar o aniversário em algo inesquecível.</p>
+    <div class="hero-meta">
+      <span class="chip">🗓️ <b>22/11</b> a <b>10/12/2026</b></span>
+      <span class="chip">👨‍👩‍👧‍👦 4 viajantes</span>
+      <span class="chip">🎢 8 parques</span>
+      <span class="chip">🎂 15 anos <b>Nathalia</b></span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ NAV ============ -->
+<nav class="toc">
+  <div class="inner">
+    <a href="#estrategia">A Estratégia</a>
+    <a href="#calendario">Calendário Dia a Dia</a>
+    <a href="#ingressos">Ingressos</a>
+    <a href="#comprar">Onde e Quando Comprar</a>
+    <a href="#hospedagem">Hospedagem</a>
+    <a href="#carro">Carro</a>
+    <a href="#orcamento">Orçamento</a>
+    <a href="#cronograma">Cronograma de Compras</a>
+    <a href="#nathalia">Toques de 15 Anos</a>
+  </div>
+</nav>
+
+<!-- ============ 1. ESTRATÉGIA ============ -->
+<section id="estrategia">
+  <div class="wrap">
+    <span class="sec-num">01 — Visão de consultor</span>
+    <h2>A grande sacada do seu <span class="u">calendário</span></h2>
+    <p class="lead">Antes de qualquer reserva, a decisão mais importante de toda viagem a Orlando é <em>quando</em> você pisa em cada parque. E aqui você (intencionalmente ou não) acertou em cheio.</p>
+
+    <div class="why">
+      <span class="tag">Por que começar os parques só em 01/12 é genial</span>
+      <p>O <strong>Thanksgiving cai em 26/11/2026 (quinta-feira)</strong> e a <strong>Black Friday em 27/11</strong>. A semana de 22 a 28 de novembro é, historicamente, <strong>uma das mais lotadas do ano inteiro</strong> nos parques — filas absurdas, estacionamentos fechando cedo e preço de ingresso no pico. Ao deixar os parques para começarem em <strong>01/12 (terça-feira)</strong>, você atravessa exatamente o "vale" que se forma depois do feriado: a multidão vai embora e entra a <strong>"janela de ouro" de 1 a 18 de dezembro</strong> — decoração de Natal montada, clima ameno e filas moderadas.</p>
+    </div>
+
+    <p>Em outras palavras: a primeira semana (22 a 30/11) não é tempo perdido — é <strong>tempo estratégico</strong>. É quando a família descansa do voo, faz as compras de Black Friday nos outlets (você está na cidade no melhor dia de descontos do ano!), abastece a cozinha e se aclimata. Os parques ficam para a fase de menor fila.</p>
+
+    <div class="grid3">
+      <div class="figure-card">
+        <div class="big-figure">22–30/11</div>
+        <div class="lbl">Aclimatação · Black Friday · compras · descanso</div>
+      </div>
+      <div class="figure-card">
+        <div class="big-figure">01–10/12</div>
+        <div class="lbl">8 parques na "janela de ouro" de baixa fila</div>
+      </div>
+      <div class="figure-card">
+        <div class="big-figure">~24–26°C</div>
+        <div class="lbl">Clima típico: dias amenos, manhãs e noites frescas</div>
+      </div>
+    </div>
+
+    <div class="tip">
+      <span class="tag">Princípio que vamos seguir o roteiro inteiro</span>
+      <p><strong>Dia de semana para os parques mais disputados</strong> (Epic Universe, Magic Kingdom, Hollywood Studios); <strong>sábado é dia de descanso</strong> (é quando o morador da Flórida lota os parques); e o <strong>bate-volta a Tampa (Busch Gardens) fica num dia de semana</strong>, porque envolve ~1h15 de estrada em cada sentido.</p>
+    </div>
+
+    <h3>Os 8 parques — e por que cada um entra</h3>
+    <ul>
+      <li><strong>Disney (3):</strong> Magic Kingdom (o coração da viagem e do aniversário), EPCOT (ritmo leve, gastronomia e o Festival of the Holidays — perfeito para adolescente) e Hollywood Studios (Star Wars, Toy Story, montanhas-russas — o mais "adrenalina" do trio).</li>
+      <li><strong>Universal (3):</strong> Epic Universe (o parque novíssimo de 2025, o mais cobiçado do momento), Islands of Adventure (Hogwarts, Hagrid, Jurassic) e Universal Studios Florida (Diagon Alley, simuladores). O trem Hogwarts Express liga os dois últimos.</li>
+      <li><strong>SeaWorld Orlando:</strong> montanhas-russas excelentes + shows de animais marinhos; fica coladinho na I-Drive, dia mais leve.</li>
+      <li><strong>Busch Gardens Tampa:</strong> as montanhas-russas mais radicais da Flórida (Iron Gwazi, SheiKra) + zoológico safári — Davi e Nathalia vão amar.</li>
+    </ul>
+
+    <div class="warn">
+      <span class="tag">Decisão a confirmar com você</span>
+      <p>Marquei <strong>Hollywood Studios</strong> como o 3º parque Disney por ser o mais "jovem/radical". Se a Nathalia e o Davi preferirem natureza e o mundo de Avatar (Pandora), dá para trocar por <strong>Animal Kingdom</strong> sem mudar nada na lógica do roteiro. É só me dizer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. CALENDÁRIO ============ -->
+<section id="calendario">
+  <div class="wrap">
+    <span class="sec-num">02 — O roteiro completo</span>
+    <h2>Calendário <span class="u">dia a dia</span></h2>
+    <p class="lead">18 dias, do desembarque ao embarque. A cor da data indica o tipo de dia: <span style="color:#264C77;font-weight:700">azul = Disney</span>, <span style="color:var(--coral-deep);font-weight:700">coral = Universal</span>, <span style="color:var(--teal-deep);font-weight:700">verde = outros parques</span>, <span style="color:#9a7320;font-weight:700">dourado = descanso/compras</span>.</p>
+
+    <h3>Semana 1 — Aclimatação, compras e descanso (22–30/11)</h3>
+
+    <div class="day rest">
+      <div class="date"><span class="d">22</span><span class="m">Nov</span><span class="w">Dom</span></div>
+      <div class="body"><span class="park">Dia do voo ✈️</span><h4>Embarque no Brasil — voo noturno</h4>
+        <p>Saída à noite e voo noturno para Orlando. Durma o máximo possível no avião: vocês pousam às 6h e o dia 23 começa cedo.</p></div>
+    </div>
+    <div class="day rest">
+      <div class="date"><span class="d">23</span><span class="m">Nov</span><span class="w">Seg</span></div>
+      <div class="body"><span class="park">Chegada · 06h em Orlando</span><h4>Desembarque, carro e mercado</h4>
+        <p>Pouso 6h no MCO → retirada do carro e mercado (Walmart/Publix) logo cedo. Como o check-in do hotel só costuma liberar à tarde (15–16h), guarde as malas, tome um café e passeie leve (Disney Springs abre cedo) até o quarto ficar pronto. À tarde, <strong>durma cedo para vencer o fuso</strong> (1–2h a mais que a Bahia).</p></div>
+    </div>
+    <div class="day rest">
+      <div class="date"><span class="d">24–25</span><span class="m">Nov</span><span class="w">Ter–Qua</span></div>
+      <div class="body"><span class="park">Aclimatação</span><h4>Outlets, Disney Springs e ICON Park</h4>
+        <p>Compras com calma nos outlets (Vineland e International Premium), passeio gratuito no Disney Springs, ICON Park na I-Drive. Ainda <em>fora</em> dos parques pagos — você foge da multidão pré-Thanksgiving.</p></div>
+    </div>
+    <div class="day rest">
+      <div class="date"><span class="d">26</span><span class="m">Nov</span><span class="w">Qui</span></div>
+      <div class="body"><span class="park">Thanksgiving</span><h4>Feriado americano — cidade cheia, parques no pico</h4>
+        <p>Dia ótimo para relaxar no hotel/casa, piscina e talvez um cinema ou boliche. Muitos restaurantes têm menu especial de Thanksgiving.</p></div>
+    </div>
+    <div class="day rest">
+      <div class="date"><span class="d">27</span><span class="m">Nov</span><span class="w">Sex</span></div>
+      <div class="body"><span class="park">Black Friday</span><h4>O melhor dia de compras do ano 🛍️</h4>
+        <p>Você está na cidade no dia exato da Black Friday. Outlets e shoppings (Florida Mall, Mall at Millenia) com os maiores descontos. Vá cedo. Aqui é onde o "tempo de espera" antes dos parques vira economia de verdade.</p></div>
+    </div>
+    <div class="day rest">
+      <div class="date"><span class="d">28–30</span><span class="m">Nov</span><span class="w">Sáb–Seg</span></div>
+      <div class="body"><span class="park">Folga / extra opcional</span><h4>Respiro antes da maratona — ou Kennedy Space Center</h4>
+        <p>Dias de descanso, piscina e organização. Opção bônus para um dia: <strong>Kennedy Space Center</strong> (~1h de carro, Davi costuma amar) ou um passeio a Cocoa Beach.</p></div>
+    </div>
+
+    <h3>Semana 2 — Os 8 parques na janela de ouro (01–10/12)</h3>
+
+    <div class="day disney">
+      <div class="date"><span class="d">01</span><span class="m">Dez</span><span class="w">Ter</span></div>
+      <div class="body"><span class="park">Disney · Magic Kingdom 🏰</span><h4>Abertura mágica</h4>
+        <div class="pillrow"><span class="pill">Castelo no Natal</span><span class="pill">Dia de semana</span><span class="pill">Foto dos 15 anos</span></div>
+        <p>Começar pelo parque-ícone, em terça-feira (menos fila), com o castelo decorado. É o cenário perfeito para abrir a comemoração da Nathalia.</p></div>
+    </div>
+    <div class="day uni">
+      <div class="date"><span class="d">02</span><span class="m">Dez</span><span class="w">Qua</span></div>
+      <div class="body"><span class="park">Universal · Epic Universe 🌌</span><h4>O parque mais novo do mundo</h4>
+        <div class="pillrow"><span class="pill">Super Nintendo World</span><span class="pill">Harry Potter Ministry</span><span class="pill">Celestial Park à noite</span></div>
+        <p>O parque mais disputado <strong>tem que ser num dia de semana</strong>. Chegue na abertura. Celestial Park iluminado à noite rende fotos lindíssimas.</p></div>
+    </div>
+    <div class="day disney" style="outline:3px solid var(--plum);outline-offset:-3px">
+      <div class="date"><span class="d">03</span><span class="m">Dez</span><span class="w">Qui</span></div>
+      <div class="body"><span class="park" style="color:var(--plum)">Disney · EPCOT 🌍 · 🎂 15 ANOS DA NATHALIA</span><h4>O dia dela — leve, gastronômico e festivo</h4>
+        <div class="pillrow"><span class="pill">Candlelight Processional</span><span class="pill">Comida do mundo</span><span class="pill">Fogos Luminous</span></div>
+        <p>O aniversário cai no melhor dia possível: EPCOT em pleno Festival of the Holidays. Volta ao mundo comendo, o emocionante Candlelight Processional e os fogos Luminous fecham a noite. <strong>Veja a página "Dia da Nathalia" para o plano completo.</strong></p></div>
+    </div>
+    <div class="day">
+      <div class="date"><span class="d">04</span><span class="m">Dez</span><span class="w">Sex</span></div>
+      <div class="body"><span class="park">SeaWorld Orlando 🐬</span><h4>Coasters + mundo marinho</h4>
+        <div class="pillrow"><span class="pill">Mako & Manta</span><span class="pill">Shows marinhos</span><span class="pill">Perto da I-Drive</span></div>
+        <p>Fica na I-Drive (deslocamento curto). Mistura de montanhas-russas fortes e shows tranquilos — bom equilíbrio antes do fim de semana.</p></div>
+    </div>
+    <div class="day rest">
+      <div class="date"><span class="d">05</span><span class="m">Dez</span><span class="w">Sáb</span></div>
+      <div class="body"><span class="park">Descanso estratégico 🎈</span><h4>Disney Springs, piscina e compras</h4>
+        <p>Sábado é o pior dia de fila (morador local lota tudo). Aproveitamos para descansar, voltar aos outlets se quiser e curtir Disney Springs à noite.</p></div>
+    </div>
+    <div class="day uni">
+      <div class="date"><span class="d">06</span><span class="m">Dez</span><span class="w">Dom</span></div>
+      <div class="body"><span class="park">Universal · Islands of Adventure 🦖</span><h4>Adrenalina pura</h4>
+        <div class="pillrow"><span class="pill">Hagrid's</span><span class="pill">Hogsmeade</span><span class="pill">VelociCoaster</span></div>
+        <p>O parque das melhores montanhas-russas da Universal e do mundo bruxo de Hogsmeade.</p></div>
+    </div>
+    <div class="day uni">
+      <div class="date"><span class="d">07</span><span class="m">Dez</span><span class="w">Seg</span></div>
+      <div class="body"><span class="park">Universal · Universal Studios Florida 🎬</span><h4>Diagon Alley e cinema</h4>
+        <div class="pillrow"><span class="pill">Diagon Alley</span><span class="pill">Hogwarts Express</span><span class="pill">Simuladores</span></div>
+        <p>Com o ingresso Park-to-Park, dá para pegar o <strong>Hogwarts Express</strong> entre os dois parques Universal — experiência que só funciona visitando os dois.</p></div>
+    </div>
+    <div class="day disney">
+      <div class="date"><span class="d">08</span><span class="m">Dez</span><span class="w">Ter</span></div>
+      <div class="body"><span class="park">Disney · Hollywood Studios 🚀</span><h4>Star Wars em dia de semana</h4>
+        <div class="pillrow"><span class="pill">Rise of the Resistance</span><span class="pill">Galaxy's Edge</span><span class="pill">Tower of Terror</span></div>
+        <p>Rise of the Resistance é altíssima demanda — terça-feira ajuda muito. Galáxia de Star Wars + Toy Story Land.</p></div>
+    </div>
+    <div class="day">
+      <div class="date"><span class="d">09</span><span class="m">Dez</span><span class="w">Qua</span></div>
+      <div class="body"><span class="park">Busch Gardens Tampa 🎢</span><h4>Bate-volta dos coasters</h4>
+        <div class="pillrow"><span class="pill">Iron Gwazi</span><span class="pill">SheiKra</span><span class="pill">Safári / zoo</span></div>
+        <p>~1h15 de estrada. As russas mais radicais da Flórida + safári com 800+ animais. Saia cedo e volte no fim da tarde.</p></div>
+    </div>
+    <div class="day rest">
+      <div class="date"><span class="d">10</span><span class="m">Dez</span><span class="w">Qui</span></div>
+      <div class="body"><span class="park">Embarque · voo 17h ✈️</span><h4>Manhã livre, últimas compras e devolução do carro</h4>
+        <p>Check-out até ~11h, manhã para últimas compras e almoço. Como o voo é às <strong>17h</strong>, esteja no MCO por volta das <strong>14h</strong> (voo internacional pede ~3h de antecedência) — devolva o carro no Rental Car Center antes disso. Vocês chegam em casa às 6h do dia 11.</p></div>
+    </div>
+
+    <div class="tip">
+      <span class="tag">Seu voo de volta encaixa bem aqui</span>
+      <p>Como vocês saem de Orlando às <strong>17h do dia 10</strong> (e não de manhã), o Busch Gardens no dia 09 fica tranquilo: dá para fazer o bate-volta a Tampa com calma e ainda sobra a manhã do dia 10 para as últimas compras antes do aeroporto. Só capriche em <strong>sair de Tampa no fim da tarde do dia 9</strong> para não chegar exausto.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. INGRESSOS ============ -->
+<section id="ingressos">
+  <div class="wrap">
+    <span class="sec-num">03 — Ingressos</span>
+    <h2>Quais ingressos <span class="u">comprar</span> (e por quê)</h2>
+    <p class="lead">Aqui está a parte que mais confunde — e onde mais se economiza ou se perde dinheiro. Vou separar por complexo, com a lógica de cada escolha. <strong>Valores são estimativas de planejamento</strong> para a alta temporada de dezembro (ages 10+; tanto o Davi quanto a Nathalia já pagam adulto). Sempre confirme o preço exato da sua data antes de comprar.</p>
+
+    <h3>🏰 Disney — ingresso de 3 dias "base"</h3>
+    <p>A Disney usa <strong>preço por data</strong> (quanto mais cheia a data, mais caro) e o ingresso de vários dias derruba bastante o preço por dia. Como você fará 3 parques em 3 dias diferentes, o ideal é o <strong>3-Day Base Ticket</strong> (1 parque por dia). Em dezembro, o ingresso de 1 dia varia de US$ 119 a US$ 209; no pacote de 3 dias o preço por dia cai bastante.</p>
+    <div class="why">
+      <span class="tag">Park Hopper: vale para vocês?</span>
+      <p>O <strong>Park Hopper</strong> (pular de parque no mesmo dia) custa cerca de US$ 90 a mais por pessoa no pacote de 3 dias. Como vocês têm só 3 dias Disney para 3 parques grandes, <strong>o "base" já resolve</strong> — cada dia rende num parque só. Eu só recomendaria o Hopper se quisessem, por exemplo, almoçar no Magic Kingdom e ver o anoitecer no EPCOT. <strong>Sugestão:</strong> comece sem Hopper; é um upgrade fácil de decidir depois.</p>
+    </div>
+
+    <h3>🎢 Universal — 3 parques, ingresso Park-to-Park</h3>
+    <p>Novidade que muda tudo para 2026: <strong>os ingressos de 3+ dias agora incluem o Epic Universe com acesso livre</strong> (antes era limitado). Para visitar os 3 parques (Epic + Islands + Studios) o ingresso certo é o <strong>3-Park, 3-Day Park-to-Park</strong>, que permite circular livremente — inclusive pegar o Hogwarts Express.</p>
+    <div class="tip">
+      <span class="tag">Promoção que pega justamente a sua data</span>
+      <p>A Universal está com o <strong>"Compre 3, Ganhe 2"</strong> (5 dias pelo preço de 3), <strong>válido para visitas até 16/12/2026</strong> — ou seja, pega o seu período. Mesmo que vocês usem só 3 dias, às vezes o pacote de 5 sai pelo mesmo valor e te dá <strong>dias extras de folga</strong> para voltar ao Epic Universe (que costuma exigir mais de um dia). Vale pedir os dois orçamentos (3 dias normal × promo 5 dias) e comparar.</p>
+    </div>
+
+    <h3>🐬 SeaWorld + 🎢 Busch Gardens — bilhete combinado</h3>
+    <p>Os dois pertencem ao mesmo grupo (United Parks), então existe ingresso combinado bem barato. O <strong>2-Park / 2-Day</strong> (uma visita a cada parque, dentro de 14 dias) costuma sair por volta de <strong>US$ 80 a 105 por pessoa</strong> — muito mais barato que comprar avulso. É exatamente o que vocês precisam: 1 dia no SeaWorld + 1 dia no Busch Gardens.</p>
+    <div class="tip">
+      <span class="tag">Não quer dirigir até Tampa?</span>
+      <p>Existe um <strong>shuttle gratuito</strong> (ida e volta no mesmo dia) saindo de Orlando para o Busch Gardens, com reserva pelo (800) 221-1339. Mas como vocês terão carro, dirigir dá mais liberdade de horário. Confira também as <strong>datas de bloqueio</strong> do combinado — no seu período (01–10/12) não há bloqueios, então está liberado.</p>
+    </div>
+
+    <h3>⚡ Fura-fila: vale a pena em dezembro?</h3>
+    <ul>
+      <li><strong>Disney — Lightning Lane Multi Pass:</strong> opcional, ~US$ 15 a 35 por pessoa/dia, varia por parque e data. Em dezembro (fila moderada) eu compraria <strong>só para Magic Kingdom e Hollywood Studios</strong>, que têm as filas mais brutais. No EPCOT, dificilmente precisa.</li>
+      <li><strong>Universal — Express Pass:</strong> caro avulso (~US$ 80 a 130/pessoa/dia). <strong>Porém é grátis</strong> se você se hospedar em um dos 3 hotéis premium da Universal (Hard Rock, Portofino Bay, Royal Pacific) — vale 1 vez por dia em Studios e Islands (não cobre o Epic Universe). Para uma estadia longa fora desses hotéis, em dia de semana, o standby + entrada antecipada costuma dar conta.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 4. ONDE E QUANDO COMPRAR ============ -->
+<section id="comprar">
+  <div class="wrap">
+    <span class="sec-num">04 — Compra dos ingressos</span>
+    <h2>Onde e <span class="u">quando</span> comprar</h2>
+    <p class="lead">A regra de ouro: <strong>comprar com antecedência</strong>. Os parques sobem o preço 1 a 2 vezes por ano (normalmente em outubro e fevereiro), então travar o valor agora protege você do aumento e da variação do dólar.</p>
+
+    <div class="two">
+      <div>
+        <h4>Opção A — Revendedor brasileiro autorizado</h4>
+        <p>São os mesmos ingressos oficiais, mas com vantagens para quem mora no Brasil:</p>
+        <ul>
+          <li>Preço em <strong>reais</strong>, sem exposição diária ao câmbio</li>
+          <li><strong>Sem IOF</strong> e geralmente <strong>parcelado sem juros</strong> (ou PIX com desconto)</li>
+          <li>Suporte e tira-dúvidas <strong>em português</strong></li>
+        </ul>
+        <p>Confira se a empresa exibe selo de <em>"revendedor/fornecedor autorizado"</em> da Disney/Universal antes de fechar.</p>
+      </div>
+      <div>
+        <h4>Opção B — Sites oficiais / internacionais</h4>
+        <p>Comprar direto no site da Disney/Universal/SeaWorld:</p>
+        <ul>
+          <li>Pagamento <strong>à vista, em dólar</strong>, com <strong>IOF</strong> e variação cambial</li>
+          <li>Sites como o <strong>Undercover Tourist</strong> (em dólar) costumam sair um pouco abaixo do balcão</li>
+          <li>Bom se você tem <strong>cartão internacional sem IOF</strong> (conta global) e quer travar o dólar num momento favorável</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="warn">
+      <span class="tag">Cuidado com promoções que NÃO valem para dezembro</span>
+      <p>A promoção brasileira "4 Parques pelo preço de 3 / 4-Park Magic" da Disney costuma valer só de <strong>janeiro a maio</strong> — <strong>não cobre o seu período</strong>. Já a promo "Compre 3, Ganhe 2" da Universal vale até <strong>16/12/2026</strong> e pega a sua data. Não caia em anúncio de promoção fora da validade.</p>
+    </div>
+
+    <div class="tip">
+      <span class="tag">Reservas que dependem da data — anote</span>
+      <ul style="margin-bottom:0">
+        <li><strong>Reserva de parque Disney:</strong> hoje, com ingresso datado, na maioria dos dias <em>não</em> é mais preciso reservar — mas confirme para a temporada de fim de ano.</li>
+        <li><strong>Epic Universe:</strong> pode usar fila virtual/reserva em dias cheios; cheque no app da Universal alguns dias antes.</li>
+        <li><strong>Restaurantes Disney:</strong> abrem reservas com <strong>60 dias de antecedência</strong> — para o início de dezembro, isso cai por volta do <strong>início de outubro</strong>. Os melhores (Cinderella, Space 220) esgotam em minutos.</li>
+        <li><strong>Lightning Lane Multi Pass:</strong> dá para pré-comprar; faça nos dias de Magic Kingdom e Hollywood Studios.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 5. HOSPEDAGEM ============ -->
+<section id="hospedagem">
+  <div class="wrap">
+    <span class="sec-num">05 — Hospedagem</span>
+    <h2>Onde se <span class="u">hospedar</span></h2>
+    <p class="lead">São 18 noites com 4 pessoas, visitando Disney <em>e</em> Universal <em>e</em> SeaWorld. Isso muda completamente a melhor escolha em relação a uma viagem curta só de Disney.</p>
+
+    <div class="why">
+      <span class="tag">Por que escolhi o corredor Lake Buena Vista / International Drive</span>
+      <p>Como vocês vão para os <strong>dois lados</strong> (Disney fica ao sul, Universal e SeaWorld ao norte), ficar num ponto <strong>central</strong> entre os dois minimiza estrada todos os dias. A região de <strong>Lake Buena Vista / I-Drive</strong> equilibra distância para ambos e tem mercados, restaurantes e outlets por perto. Kissimmee é ótimo e mais barato, mas puxa um pouco mais para o lado Disney.</p>
+    </div>
+
+    <div class="why">
+      <span class="tag">Por que apartamento/casa com cozinha — e não hotel comum</span>
+      <p>Em 18 dias, <strong>cozinha é economia real</strong>: cafés da manhã e jantares simples em casa cortam centenas de dólares de restaurante. Para 4 pessoas, um <strong>2 quartos (suíte com cozinha)</strong> ou uma <strong>casa de temporada</strong> dá mais espaço, lavanderia e conforto para a maratona de parques. Os adolescentes ainda ganham privacidade.</p>
+    </div>
+
+    <h3>Três caminhos, por orçamento</h3>
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Perfil</th><th>Exemplos</th><th>Diária aprox.</th><th>18 noites (est.)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Casa de temporada</strong><br>(3–4 qts, às vezes piscina)</td><td>Condomínios em Kissimmee / Davenport / Championsgate</td><td class="num">US$ 150–250</td><td class="num">US$ 2.700–4.500</td></tr>
+          <tr><td><strong>Apart-hotel com cozinha</strong><br>(2 qts / suíte)</td><td>Staybridge Suites LBV, Homewood Suites, Hyatt House</td><td class="num">US$ 130–200</td><td class="num">US$ 2.340–3.600</td></tr>
+          <tr><td><strong>Hotel econômico</strong></td><td>Rosen Inn, Celebration Suites (atend. em português)</td><td class="num">US$ 90–130</td><td class="num">US$ 1.620–2.340</td></tr>
+        </tbody>
+        <caption>Estimativas para dezembro/2026, sujeitas a variação. Reserve cedo: alta temporada de Natal lota.</caption>
+      </table>
+    </div>
+
+    <div class="tip">
+      <span class="tag">Minha recomendação para a família Viana</span>
+      <p>Para o equilíbrio entre conforto (18 dias!), economia de comida e espaço para os 4, eu fecharia uma <strong>casa de temporada com piscina</strong> ou um <strong>apart-hotel 2 quartos com cozinha</strong> na faixa Lake Buena Vista. A piscina privativa é um luxo barato que transforma os dias de descanso (e a noite do aniversário da Nathalia).</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 6. CARRO ============ -->
+<section id="carro">
+  <div class="wrap">
+    <span class="sec-num">06 — Locação de carro</span>
+    <h2>O <span class="u">carro</span> da viagem</h2>
+    <p class="lead">Visitando 8 parques espalhados + outlets + Tampa, <strong>carro não é opcional, é essencial</strong>. Uber em 18 dias com 4 pessoas sairia muito mais caro e amarraria seus horários.</p>
+
+    <h3>Qual categoria</h3>
+    <p>Para 4 pessoas + malas + as compras de Black Friday (que crescem!), recomendo um <strong>SUV intermediário/grande</strong> (tipo Toyota RAV4, Jeep Compass ou maior). Não economize no porta-malas — 18 dias de compras enchem qualquer bagageiro.</p>
+
+    <h3>Onde retirar</h3>
+    <p>No próprio <strong>aeroporto de Orlando (MCO)</strong>, no Rental Car Center do terminal. A <strong>Alamo</strong> é a queridinha dos brasileiros pelo custo-benefício e retirada fácil, mas vale comparar com Budget, Dollar e Enterprise.</p>
+
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Item</th><th>O que saber</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Habilitação</strong></td><td>A <strong>CNH brasileira válida funciona</strong> nos EUA. A PID (permissão internacional) não é obrigatória em estadia curta, mas é barata e recomendada por precaução.</td></tr>
+          <tr><td><strong>Documentos no balcão</strong></td><td>CNH, passaporte e <strong>cartão de crédito internacional</strong> em nome do condutor (para a caução).</td></tr>
+          <tr><td><strong>Seguro</strong></td><td>Não é obrigatório por lei, <strong>mas a locadora exige cobertura</strong>. Feche o seguro completo (LDW/CDW + responsabilidade) — de preferência <strong>já incluído na reserva pré-paga</strong> para não cair no "empurra-seguro" do balcão.</td></tr>
+          <tr><td><strong>Pedágios (SunPass)</strong></td><td>A Flórida tem pedágios automáticos. Pegue o pacote de pedágio da locadora ou confirme como pagar — brasileiros já tomaram multas de US$ 100+ por ignorar isso.</td></tr>
+          <tr><td><strong>Estacionamento nos parques</strong></td><td>Disney, Universal, SeaWorld e Busch cobram ~US$ 30/dia cada. Em ~8 dias de parque, reserve ~US$ 240 para isso.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="why">
+      <span class="tag">Por que reservar pré-pago em reais (e não pagar lá)</span>
+      <p>Reservar antes por uma plataforma (RentCars e similares) com <strong>seguro incluído e preço em reais parcelado</strong> evita o IOF do cartão, trava o valor e te protege do clássico upsell agressivo no balcão americano. Chegue com o voucher impresso.</p>
+    </div>
+
+    <div class="tip">
+      <span class="tag">Dica de ouro para pagar tudo lá fora</span>
+      <p>Abra uma <strong>conta global / cartão em dólar</strong> (Nomad, Wise e similares) para pagar parques, comida e caução do carro <strong>sem o IOF e o spread</strong> do cartão brasileiro comum. Em 18 dias de gastos, a diferença é significativa.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 7. ORÇAMENTO ============ -->
+<section id="orcamento">
+  <div class="wrap">
+    <span class="sec-num">07 — Orçamento</span>
+    <h2>Quanto vai <span class="u">custar</span></h2>
+    <p class="lead">Estimativa consolidada para os <strong>4 viajantes</strong>, fora as passagens aéreas. Câmbio de planejamento: <strong>~R$ 5,50/US$</strong> (dólar turismo/cartão; o comercial estava ~R$ 5,04, mas use uma folga). <em>São estimativas — não são cotações oficiais e variam com data e dólar.</em></p>
+
+    <div class="tbl-scroll">
+      <table>
+        <thead><tr><th>Categoria</th><th>Estimativa (4 pessoas)</th><th>Em reais (~R$ 5,50)</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Ingressos Disney</strong> (3 dias base)</td><td class="num">US$ 2.100–2.300</td><td class="num">R$ 11.500–12.650</td></tr>
+          <tr><td><strong>Ingressos Universal</strong> (3-Park 3-Day P2P)</td><td class="num">US$ 1.900–2.100</td><td class="num">R$ 10.450–11.550</td></tr>
+          <tr><td><strong>SeaWorld + Busch Gardens</strong></td><td class="num">US$ 350–420</td><td class="num">R$ 1.925–2.310</td></tr>
+          <tr><td><strong>Fura-fila</strong> (Lightning Lane, opcional)</td><td class="num">US$ 200–500</td><td class="num">R$ 1.100–2.750</td></tr>
+          <tr><td><strong>Hospedagem</strong> (18 noites)</td><td class="num">US$ 2.500–4.000</td><td class="num">R$ 13.750–22.000</td></tr>
+          <tr><td><strong>Carro</strong> (18 dias, SUV + seguro)</td><td class="num">US$ 1.400–2.000</td><td class="num">R$ 7.700–11.000</td></tr>
+          <tr><td><strong>Estacionamento + gasolina + pedágio</strong></td><td class="num">US$ 450–600</td><td class="num">R$ 2.475–3.300</td></tr>
+          <tr><td><strong>Alimentação</strong> (com cozinha)</td><td class="num">US$ 2.000–3.000</td><td class="num">R$ 11.000–16.500</td></tr>
+          <tr><td><strong>Seguro viagem</strong> (18 dias, família)</td><td class="num">US$ 150–300</td><td class="num">R$ 825–1.650</td></tr>
+          <tr class="total"><td><strong>SUBTOTAL (sem voo e sem compras)</strong></td><td class="num">US$ 11.000–15.200</td><td class="num">R$ 60.500–83.600</td></tr>
+        </tbody>
+        <caption>Não inclui passagens aéreas nem o orçamento de compras (Black Friday/outlets), que é pessoal.</caption>
+      </table>
+    </div>
+
+    <div class="two">
+      <div class="figure-card">
+        <div class="big-figure">✓ Feito</div>
+        <div class="lbl">Passagens aéreas — <strong>já compradas</strong> (saída 22/11, volta 10/12 às 17h). Um item a menos no orçamento!</div>
+      </div>
+      <div class="figure-card">
+        <div class="big-figure">Compras</div>
+        <div class="lbl">Orçamento livre de Black Friday/outlets — defina um teto e leve no cartão global</div>
+      </div>
+    </div>
+
+    <div class="tip">
+      <span class="tag">Onde a estratégia já economiza para você</span>
+      <p>Ficar fora dos parques na semana de Thanksgiving (ingresso no pico) + cozinha na hospedagem + ingressos travados em reais sem IOF + carro pré-pago: somando tudo, essas escolhas podem representar <strong>milhares de reais</strong> de diferença em relação a fazer "no improviso".</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 8. CRONOGRAMA DE COMPRAS ============ -->
+<section id="cronograma">
+  <div class="wrap">
+    <span class="sec-num">08 — Linha do tempo</span>
+    <h2>O que comprar <span class="u">e quando</span></h2>
+    <p class="lead">Estamos em junho/2026. Faltam ~5 meses e meio — tempo perfeito para travar tudo nas melhores condições. Siga esta ordem:</p>
+
+    <div class="day"><div class="date" style="background:linear-gradient(165deg,var(--teal),var(--teal-deep))"><span class="d">Já</span><span class="m">Jun</span></div>
+      <div class="body"><h4>Hospedagem (passagens já garantidas ✓)</h4><p>Com os voos comprados, a prioridade agora é travar a hospedagem — em alta temporada de Natal, quanto antes, melhor disponibilidade e preço. Mire um dos hotéis econômicos do corredor I-Drive / Lake Buena Vista.</p></div></div>
+
+    <div class="day"><div class="date" style="background:linear-gradient(165deg,var(--coral),var(--coral-deep))"><span class="d">Jun–Jul</span><span class="m">2026</span></div>
+      <div class="body"><h4>Ingressos dos parques</h4><p>Disney (3 dias base), Universal (3-Park P2P — peça orçamento da promo "Compre 3, Ganhe 2") e o combo SeaWorld + Busch Gardens. Travar o preço protege do reajuste de outubro e do dólar.</p></div></div>
+
+    <div class="day"><div class="date" style="background:linear-gradient(165deg,var(--gold),#9a7320)"><span class="d">Jul–Ago</span><span class="m">2026</span></div>
+      <div class="body"><h4>Carro + seguro viagem + cartão global</h4><p>Reserve o SUV pré-pago com seguro incluído. Contrate o seguro viagem (obrigatório na prática para os EUA). Abra a conta/cartão em dólar.</p></div></div>
+
+    <div class="day"><div class="date" style="background:linear-gradient(165deg,#3A6EA5,#264C77)"><span class="d">~Out</span><span class="m">2026</span></div>
+      <div class="body"><h4>Reservas de restaurante Disney (janela de 60 dias)</h4><p>Para o início de dezembro, a janela abre por volta do começo de outubro. Tenha em mãos data e horário do jantar especial da Nathalia (veja a próxima seção).</p></div></div>
+
+    <div class="day"><div class="date" style="background:linear-gradient(165deg,var(--plum),#6e2247)"><span class="d">Nov</span><span class="m">2026</span></div>
+      <div class="body"><h4>Ajustes finais (dias antes / na viagem)</h4><p>Lightning Lane Multi Pass (MK e Hollywood Studios), checar fila virtual do Epic Universe no app, confirmar reservas e baixar os apps (My Disney Experience e Universal Orlando).</p></div></div>
+  </div>
+</section>
+
+<!-- ============ 9. TOQUES 15 ANOS ============ -->
+<section id="nathalia">
+  <div class="wrap">
+    <span class="sec-num">09 — O coração da viagem</span>
+    <h2>Toques de <span class="u">consultor</span> para os 15 anos</h2>
+    <p class="lead">A viagem é boa por si só — mas alguns detalhes pequenos (e quase de graça) transformam o aniversário da Nathalia em memória para a vida toda.</p>
+
+    <ul>
+      <li><strong>Botão de aniversário grátis da Disney:</strong> peça o "Happy Birthday button" no Guest Relations / nas lojas. Os funcionários (cast members) param para parabenizar a aniversariante o dia todo. Simples e emocionante.</li>
+      <li><strong>Elejam o "Dia da Nathalia":</strong> escolham uma data da viagem para ser <em>o</em> dia dela. Sugiro casar com o <strong>Magic Kingdom (01/12)</strong> de manhã + um <strong>jantar especial à noite</strong>.</li>
+      <li><strong>Jantar comemorativo:</strong> reserve com 60 dias de antecedência. Opções com cara de 15 anos: <em>Cinderella's Royal Table</em> dentro do castelo (clássico de princesa), <em>Space 220</em> no EPCOT (jantar "no espaço") ou <em>Le Cellier</em>. Esgotam rápido — por isso entram no cronograma de outubro.</li>
+      <li><strong>Fotos profissionais:</strong> avalie o <strong>Memory Maker</strong> da Disney (fotos ilimitadas dos fotógrafos PhotoPass nos parques) para registrar os 15 anos com qualidade, sem depender só do celular.</li>
+      <li><strong>Cenário de foto matador:</strong> o <strong>Celestial Park (Epic Universe) à noite</strong> e o <strong>castelo decorado de Natal no Magic Kingdom</strong> são os dois cenários mais bonitos da viagem para um ensaio dos 15.</li>
+      <li><strong>Bolo em casa:</strong> nada impede uma comemoração intimista na casa de temporada — bolo do Publix (lindos e baratos) e a piscina à noite. Às vezes o momento mais lembrado é esse, em família.</li>
+    </ul>
+
+    <div class="tip">
+      <span class="tag">Próximo passo comigo</span>
+      <p>Me diga (1) se prefere <strong>Hollywood Studios ou Animal Kingdom</strong> como 3º parque Disney, (2) seu <strong>perfil de hospedagem</strong> (casa de temporada × apart-hotel × econômico) e (3) o <strong>dia exato do aniversário</strong> da Nathalia. Com isso eu refino o roteiro hora a hora de cada parque (ordem das atrações, onde almoçar, qual fura-fila usar) e monto a lista de reservas.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>Roteiro Orlando 2026 — 15 anos da Nathalia</b> · Família Viana · 22/11 a 10/12/2026</div>
+    <div>Documento de planejamento elaborado em junho/2026. Preços e regras de parques mudam — confirme valores e datas no ato da compra.</div>
+    <div>Estimativas não constituem cotação oficial nem aconselhamento financeiro.</div>
+  </div>
+</footer>
+
+</body>
+</html>
