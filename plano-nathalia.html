@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roteiro Completo · Orlando 2026 · Família Viana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#FBF5EA;--ink:#241B12;--coral:#E8623D;--coral-deep:#C23E1E;--teal:#157C7E;--teal-deep:#0E5A5C;--gold:#C79A3D;--plum:#9C3262;--blue:#3A6EA5;--blue-deep:#264C77;--line:#E2D5BF;--shadow:rgba(36,27,18,.10)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--cream);color:var(--ink);font-family:'Public Sans',sans-serif;line-height:1.58;font-size:16px;overflow-x:hidden}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.035;background-image:radial-gradient(var(--ink) .5px,transparent .5px);background-size:4px 4px}
+  .wrap{max-width:920px;margin:0 auto;padding:0 22px}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;line-height:1.1;font-weight:900}
+  .hero{position:relative;color:var(--cream);overflow:hidden;padding:66px 0 52px;background:radial-gradient(760px 440px at 84% -10%,rgba(232,98,61,.5),transparent 60%),radial-gradient(620px 520px at 2% 115%,rgba(156,50,98,.5),transparent 55%),linear-gradient(160deg,#241B12,#3A2330 55%,#1C2230)}
+  .hero .wrap{position:relative;z-index:2}
+  .kicker{font-weight:700;letter-spacing:.28em;text-transform:uppercase;font-size:.68rem;color:var(--gold);margin-bottom:14px}
+  .hero h1{font-size:clamp(2.2rem,5.5vw,3.7rem);letter-spacing:-.02em}
+  .hero h1 em{font-style:italic;font-weight:500;color:var(--coral)}
+  .hero p{font-family:'Fraunces',serif;font-style:italic;color:rgba(251,245,234,.86);margin-top:14px;max-width:640px;font-size:1.05rem}
+  .hero .meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+  .chip{border:1px solid rgba(251,245,234,.28);border-radius:999px;padding:7px 15px;font-size:.78rem;font-weight:500}
+  .chip b{color:var(--gold)}
+
+  .legend{padding:26px 0 0}
+  .legend .wrap{display:flex;flex-wrap:wrap;gap:8px}
+  .badge{font-size:.72rem;font-weight:700;padding:5px 12px;border-radius:999px;color:#fff}
+  .b-disney{background:var(--blue-deep)} .b-uni{background:var(--coral-deep)} .b-other{background:var(--teal-deep)} .b-rest{background:#9a7320} .b-travel{background:#555}
+
+  section{padding:24px 0 40px}
+  .phase{font-family:'Fraunces',serif;font-style:italic;color:var(--coral-deep);font-size:1.15rem;font-weight:600;margin:30px 0 6px;padding-left:4px}
+  .day{background:#fff;border:1px solid var(--line);border-radius:18px;margin:14px 0;overflow:hidden;box-shadow:0 16px 40px -30px var(--shadow)}
+  .day-head{padding:14px 22px;color:#fff;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 12px}
+  .day.disney .day-head{background:linear-gradient(135deg,var(--blue),var(--blue-deep))}
+  .day.uni .day-head{background:linear-gradient(135deg,var(--coral),var(--coral-deep))}
+  .day.other .day-head{background:linear-gradient(135deg,var(--teal),var(--teal-deep))}
+  .day.rest .day-head{background:linear-gradient(135deg,var(--gold),#9a7320)}
+  .day.travel .day-head{background:linear-gradient(135deg,#6b6b6b,#3f3f3f)}
+  .day.bday .day-head{background:linear-gradient(135deg,var(--plum),#6E2247)}
+  .day-head .dt{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.92;width:100%}
+  .day-head h3{font-size:1.4rem}
+  .day-head .tagpark{font-size:.78rem;font-weight:700;opacity:.95}
+  .bdaypill{font-size:.7rem;font-weight:700;background:var(--gold);color:#2A1B22;padding:3px 10px;border-radius:999px;letter-spacing:.04em}
+
+  .periods{padding:6px 22px 16px}
+  .period{padding:12px 0;border-bottom:1px dashed var(--line)}
+  .period:last-of-type{border-bottom:none}
+  .period .pname{font-family:'Fraunces',serif;font-weight:900;font-size:.92rem;letter-spacing:.02em;margin-bottom:5px;display:flex;align-items:center;gap:7px}
+  .period.m .pname{color:var(--gold)}
+  .period.t .pname{color:var(--coral-deep)}
+  .period.n .pname{color:var(--blue-deep)}
+  .period.all .pname{color:#9a7320}
+  .ic{font-size:1rem}
+  .items{display:flex;flex-wrap:wrap;gap:6px}
+  .it{font-size:.84rem;background:#F2E7D2;color:#5b4427;padding:4px 11px;border-radius:8px;font-weight:500}
+  .it.star{background:#FBE9C9;color:#8a6516;font-weight:700}
+  .it.eat{background:#EAF4F2;color:var(--teal-deep);font-weight:700}
+
+  .tipc{background:#EAF4F2;border-left:4px solid var(--teal);border-radius:0 10px 10px 0;padding:10px 15px;margin:12px 0 2px;font-size:.88rem}
+  .tipc .tag{font-weight:700;color:var(--teal-deep);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:2px}
+  .warnc{background:#FBEFE6;border-left:4px solid var(--gold);border-radius:0 10px 10px 0;padding:10px 15px;margin:12px 0 2px;font-size:.88rem}
+  .warnc .tag{font-weight:700;color:#9a7320;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;display:block;margin-bottom:2px}
+
+  .intro-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 22px;margin:22px 0;box-shadow:0 14px 36px -28px var(--shadow)}
+  .intro-card h2{font-size:1.3rem;margin-bottom:8px;color:var(--coral-deep)}
+  .intro-card p{font-size:.95rem;margin-bottom:8px}
+  .intro-card .by{font-family:'Fraunces',serif;font-style:italic;color:var(--plum);font-size:.95rem}
+
+  footer{background:#1C2230;color:rgba(251,245,234,.74);padding:34px 0;font-size:.82rem;position:relative;z-index:2}
+  footer b{color:var(--gold)}
+  @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+  .reveal{animation:rise .6s both}
+</style>
+<style>.sitenav{position:sticky;top:0;z-index:60;background:rgba(252,243,246,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,.08)}.sitenav .inner{display:flex;align-items:center;gap:6px;overflow-x:auto;padding:10px 20px;max-width:1080px;margin:0 auto}.sitenav .brand{font-family:Fraunces,serif;font-weight:900;font-size:.9rem;color:#9C3262;white-space:nowrap;margin-right:8px;text-decoration:none}.sitenav a{white-space:nowrap;text-decoration:none;color:#2A1B22;font-size:.78rem;font-weight:700;padding:6px 12px;border-radius:999px;transition:.2s}.sitenav a:hover{background:#9C3262;color:#fff}.sitenav a.active{background:#9C3262;color:#fff}</style>
+</head>
+<body>
+<nav class="sitenav"><div class="inner"><a class="brand" href="index.html">🏰 Orlando 2026</a>
+<a href="index.html">Início</a>
+<a class="active" href="plano-nathalia.html">Roteiro</a>
+<a href="guia-parques.html">Parques</a>
+<a href="dia-da-nathalia.html">Aniversário</a>
+<a href="cartao-reservas.html">Reservas</a>
+<a href="roteiro-orlando.html">Custos & Dicas</a><a href="album.html">Álbum</a>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap reveal">
+    <span class="kicker">Roteiro completo · embarque ao retorno</span>
+    <h1>Orlando <em>2026</em><br>Família Viana</h1>
+    <p>Dia a dia, de Salvador a Salvador: chegada, aclimatação, os 6 parques da Nathalia, o aniversário no castelo e a volta. Tudo num só lugar.</p>
+    <div class="meta">
+      <span class="chip">✈️ <b>22/11</b> (saída) → <b>11/12</b> (retorno)</span>
+      <span class="chip">👨‍👩‍👧‍👦 4 viajantes</span>
+      <span class="chip">🎢 6 parques</span>
+      <span class="chip">🎂 15 anos <b>Nathalia</b> · 03/12</span>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="intro-card">
+    <h2>Como ler este roteiro</h2>
+    <p>A <strong>ordem dos parques e as atrações são as que a Nathalia escolheu</strong> — mantidas do jeito dela. Eu preenchi os dias que faltavam (viagem, chegada, feriados e descansos) e acrescentei, onde ajuda, uma <strong>dica do consultor</strong> (azul) ou um <strong>alerta</strong> (dourado).</p>
+    <p>Para não cansar, <strong>tiramos o EPCOT e o Busch Gardens</strong>: ficaram 6 parques e uma segunda metade bem mais leve, com descansos entre os passeios.</p>
+    <p class="by">A viagem é dela — as dicas são só para tirar o máximo de cada dia. 🎈</p>
+  </div>
+</div>
+
+<section class="legend">
+  <div class="wrap">
+    <span class="badge b-travel">Viagem</span>
+    <span class="badge b-rest">Aclimatação / compras / descanso</span>
+    <span class="badge b-uni">Universal</span>
+    <span class="badge b-disney">Disney</span>
+    <span class="badge b-other">Outros parques</span>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <p class="phase">Fase 1 — Chegada e aclimatação (22/11 a 30/11)</p>
+
+  <!-- 22/11 -->
+  <div class="day travel">
+    <div class="day-head"><span class="dt">Sábado · 22/11</span><h3>✈️ Embarque em Salvador</h3><span class="tagpark">início da viagem</span></div>
+    <div class="periods">
+      <div class="period all"><div class="pname"><span class="ic">🛫</span>O dia</div><div class="items"><span class="it">Check-in no aeroporto de Salvador</span><span class="it">Voo (provável conexão)</span><span class="it">Voo noturno rumo a Orlando</span></div></div>
+      <div class="tipc"><span class="tag">Dica do consultor</span>Chegue ao aeroporto com boa antecedência (voo internacional). Tente dormir no avião: vocês pousam às 6h e o dia 23 começa cedo. Leve na bagagem de mão: documentos, remédios, carregador e uma muda de roupa.</div>
+    </div>
+  </div>
+
+  <!-- 23/11 -->
+  <div class="day rest">
+    <div class="day-head"><span class="dt">Domingo · 23/11</span><h3>🛬 Chegada · 06h em Orlando</h3><span class="tagpark">carro + mercado</span></div>
+    <div class="periods">
+      <div class="period m"><div class="pname"><span class="ic">🌅</span>Manhã</div><div class="items"><span class="it">Imigração no MCO</span><span class="it">Retirada do carro (Rental Car Center)</span><span class="it eat">Mercado: Walmart / Publix</span></div></div>
+      <div class="period t"><div class="pname"><span class="ic">🌤️</span>Tarde</div><div class="items"><span class="it">Guardar malas no hotel</span><span class="it">Passeio leve (Disney Springs)</span><span class="it">Dormir cedo (vencer o fuso)</span></div></div>
+      <div class="warnc"><span class="tag">Atenção</span>O check-in do hotel costuma liberar só à tarde (15–16h). Guarde as malas, tome um café e passeie leve até o quarto ficar pronto. Fuso: 1–2h a mais que a Bahia.</div>
+    </div>
+  </div>
+
+  <!-- 24-25/11 -->
+  <div class="day rest">
+    <div class="day-head"><span class="dt">Seg–Ter · 24–25/11</span><h3>🛍️ Aclimatação</h3><span class="tagpark">compras e ambientação</span></div>
+    <div class="periods">
+      <div class="period all"><div class="pname"><span class="ic">☀️</span>Os dias</div><div class="items"><span class="it">Outlets (Vineland / International Premium)</span><span class="it">Disney Springs</span><span class="it">ICON Park (I-Drive)</span><span class="it eat">Abastecer a cozinha/lanches</span></div></div>
+      <div class="tipc"><span class="tag">Dica do consultor</span>Ainda fora dos parques pagos — assim vocês fogem da multidão da semana de Thanksgiving e ajustam o corpo ao fuso com calma.</div>
+    </div>
+  </div>
+
+  <!-- 26/11 -->
+  <div class="day rest">
+    <div class="day-head"><span class="dt">Quarta · 26/11</span><h3>🦃 Thanksgiving</h3><span class="tagpark">feriado americano</span></div>
+    <div class="periods">
+      <div class="period all"><div class="pname"><span class="ic">🏡</span>O dia</div><div class="items"><span class="it">Descanso / piscina</span><span class="it">Cinema ou boliche</span><span class="it eat">Jantar especial de Thanksgiving</span></div></div>
+      <div class="warnc"><span class="tag">Atenção</span>Cidade cheia e parques no pico. Dia perfeito para relaxar. Muitos restaurantes têm menu especial do feriado — vale reservar se quiser a experiência.</div>
+    </div>
+  </div>
+
+  <!-- 27/11 -->
+  <div class="day rest">
+    <div class="day-head"><span class="dt">Quinta · 27/11</span><h3>🛍️ Black Friday</h3><span class="tagpark">o melhor dia de compras do ano</span></div>
+    <div class="periods">
+      <div class="period all"><div class="pname"><span class="ic">💳</span>O dia</div><div class="items"><span class="it">Outlets (chegar cedo!)</span><span class="it">Florida Mall</span><span class="it">Mall at Millenia</span><span class="it">Eletrônicos / tênis / roupas</span></div></div>
+      <div class="tipc"><span class="tag">Dica do consultor</span>Vocês estão na cidade no dia exato da Black Friday — os maiores descontos do ano. Vá cedo, leve lista do que procurar e use o cartão global (sem IOF) para economizar ainda mais.</div>
+    </div>
+  </div>
+
+  <!-- 28-29/11 -->
+  <div class="day rest">
+    <div class="day-head"><span class="dt">Sex–Sáb · 28–29/11</span><h3>🌴 Fim de semana livre</h3><span class="tagpark">respiro antes da maratona</span></div>
+    <div class="periods">
+      <div class="period all"><div class="pname"><span class="ic">☀️</span>Os dias</div><div class="items"><span class="it">Piscina e descanso</span><span class="it">Mais compras (se quiser)</span><span class="it">Opcional: Kennedy Space Center</span><span class="it">Opcional: Cocoa Beach</span></div></div>
+      <div class="tipc"><span class="tag">Dica do consultor</span>Bônus para o Davi: o Kennedy Space Center fica a ~1h de carro e costuma ser um sucesso. Mas sem pressa — esses dias também servem só para descansar.</div>
+    </div>
+  </div>
+
+  <!-- 30/11 -->
+  <div class="day rest">
+    <div class="day-head"><span class="dt">Domingo · 30/11</span><h3>🎒 Véspera dos parques</h3><span class="tagpark">organização</span></div>
+    <div class="periods">
+      <div class="period all"><div class="pname"><span class="ic">✅</span>O dia</div><div class="items"><span class="it">Descanso</span><span class="it">Ingressos conferidos no app</span><span class="it">Roupas separadas</span><span class="it">Power banks carregados</span><span class="it">Dormir cedo</span></div></div>
+      <div class="tipc"><span class="tag">Dica do consultor</span>Último dia antes de vários parques seguidos. Deixe tudo pronto hoje: ingressos no app, garrafas de água, protetor solar e a primeira mochila montada.</div>
+    </div>
+  </div>
+
+  <p class="phase">Fase 2 — Os 6 parques da Nathalia (01/12 a 08/12)</p>
+
+  <!-- 01/12 EPIC -->
+  <div class="day uni">
+    <div class="day-head"><span class="dt">Segunda · 01/12</span><h3>🌌 Epic Universe</h3><span class="tagpark">escolha da Nathalia ✓</span></div>
+    <div class="periods">
+      <div class="period m"><div class="pname"><span class="ic">🌅</span>Manhã</div><div class="items"><span class="it">Super Nintendo World</span><span class="it">Mario Kart</span><span class="it">Donkey Kong</span><span class="it">Harry Potter</span><span class="it">Show (conforme horário)</span></div></div>
+      <div class="period t"><div class="pname"><span class="ic">🌤️</span>Tarde</div><div class="items"><span class="it">Ministry of Magic</span><span class="it eat">Café La Sirene</span><span class="it">Como Treinar seu Dragão</span><span class="it">Hiccup's Wing Gliders</span><span class="it">Dark Universe</span></div></div>
+      <div class="period n"><div class="pname"><span class="ic">🌙</span>Noite</div><div class="items"><span class="it">The Frankenstein</span><span class="it">Curse of the Werewolf</span><span class="it">Stardust Racers</span><span class="it star">Celestial Park iluminado ✨</span></div></div>
+      <div class="tipc"><span class="tag">Dica do consultor — ordem de ataque</span>Só uma inversão na manhã: logo na abertura, corra <strong>primeiro para o Harry Potter (Ministry of Magic)</strong> — é a fila que mais cresce. <strong>Depois</strong> a Super Nintendo World, cujas filas caem mais à tarde/noite. O resto do dia segue como ela planejou.</div>
+    </div>
+  </div>
+
+  <!-- 02/12 HS -->
+  <div class="day disney">
+    <div class="day-head"><span class="dt">Terça · 02/12</span><h3>🎬 Hollywood Studios</h3><span class="tagpark">escolha da Nathalia ✓</span></div>
+    <div class="periods">
+      <div class="period m"><div class="pname"><span class="ic">🌅</span>Manhã</div><div class="items"><span class="it">Hollywood Boulevard</span><span class="it">Runaway Railway</span><span class="it">Tower of Terror</span><span class="it">Rock 'n' Roller Coaster</span><span class="it">Show da Bela e a Fera</span></div></div>
+      <div class="period t"><div class="pname"><span class="ic">🌤️</span>Tarde</div><div class="items"><span class="it eat">Commissary Lane (almoço)</span><span class="it">Indiana Jones Show</span><span class="it">Pixar Plaza</span><span class="it">Toy Story Land</span><span class="it">Toy Story Mania</span><span class="it">Slinky Dog Dash</span></div></div>
+      <div class="period n"><div class="pname"><span class="ic">🌙</span>Noite</div><div class="items"><span class="it">Galaxy's Edge (Star Wars)</span><span class="it">Smugglers Run</span><span class="it">Rise of the Resistance</span><span class="it">Sunset Ranch</span><span class="it">Fantasmic!</span><span class="it">Wonderful World of Animation</span></div></div>
+      <div class="warnc"><span class="tag">Atenção — a única troca que eu faria</span>A <strong>Rise of the Resistance</strong> é a atração de MAIOR fila da Disney. Deixá-la para a noite é arriscado (pode esgotar). Sugestão: comprar o <strong>Lightning Lane individual</strong> dela OU fazê-la <strong>logo na abertura</strong>, jogando a Slinky Dog para esse encaixe. O resto fica perfeito.</div>
+    </div>
+  </div>
+
+  <!-- 03/12 MK BIRTHDAY -->
+  <div class="day bday">
+    <div class="day-head"><span class="dt">Quarta · 03/12</span><span class="bdaypill">🎂 15 ANOS</span><h3>🏰 Magic Kingdom</h3><span class="tagpark">o dia dela — escolha da Nathalia ✓</span></div>
+    <div class="periods">
+      <div class="period m"><div class="pname"><span class="ic">🥞</span>Café da manhã</div><div class="items"><span class="it eat">Chef Mickey's (com personagens)</span></div></div>
+      <div class="period m"><div class="pname"><span class="ic">🌅</span>Manhã</div><div class="items"><span class="it">Main Street U.S.A.</span><span class="it">Adventureland · Tiana's Bayou</span><span class="it star">Dole Whip 🍍 (sorvete c/ abacaxi)</span><span class="it">Frontierland</span><span class="it">Big Thunder Mountain</span></div></div>
+      <div class="period t"><div class="pname"><span class="ic">🌤️</span>Tarde</div><div class="items"><span class="it">Pirates of the Caribbean</span><span class="it">Liberty Square</span><span class="it">Hall of Presidents</span><span class="it">Haunted Mansion</span><span class="it eat">Almoço: Cinderella's Royal Table 👑</span><span class="it">Tron (durante a parada)</span></div></div>
+      <div class="period n"><div class="pname"><span class="ic">🌙</span>Noite</div><div class="items"><span class="it">Space Mountain</span><span class="it">Fantasyland · 7 Dwarfs</span><span class="it">Under the Sea (Ariel)</span><span class="it star">Show de Fogos 🎆</span><span class="it eat">Starbucks</span><span class="it">Tron</span></div></div>
+      <div class="tipc"><span class="tag">Dica do consultor — o truque do Tron</span>Genial a ideia dela de "sair da parada e ir para Tron": durante a parada da tarde, a fila do Tron despenca. Para garantir, entre no app às <strong>7h</strong> e pegue a <strong>fila virtual gratuita do Tron</strong>. Pegue o <strong>botão "Happy Birthday" grátis</strong> no Guest Relations na entrada.</div>
+      <div class="warnc"><span class="tag">Dois pontos para confirmar antes</span>1) O <strong>Chef Mickey's fica no hotel Contemporary</strong> (ligado por monorail) — café cedo e depois corre para o castelo. 2) Confirme se 03/12 é <strong>noite de festa de Natal</strong>: se for, o parque fecha cedo para quem não tem o ingresso da festa (e aí a festa vira um aniversário inesquecível, com parada e fogos exclusivos).</div>
+    </div>
+  </div>
+
+  <!-- 04/12 OUTLET -->
+  <div class="day rest">
+    <div class="day-head"><span class="dt">Quinta · 04/12</span><h3>🛍️ Outlet & descanso</h3><span class="tagpark">escolha da Nathalia ✓</span></div>
+    <div class="periods">
+      <div class="period all"><div class="pname"><span class="ic">☀️</span>O dia</div><div class="items"><span class="it">Premium Outlets</span><span class="it">Compras</span><span class="it">Piscina</span><span class="it">Disney Springs à noite</span></div></div>
+      <div class="tipc"><span class="tag">Dica do consultor</span>Encaixe perfeito: vem depois de 3 dias intensos e dá um respiro antes da reta final. Aproveite para repor água, lanches e descansar as pernas.</div>
+    </div>
+  </div>
+
+  <!-- 05/12 USF -->
+  <div class="day uni">
+    <div class="day-head"><span class="dt">Sexta · 05/12</span><h3>🎢 Universal Studios</h3><span class="tagpark">escolha da Nathalia ✓</span></div>
+    <div class="periods">
+      <div class="period m"><div class="pname"><span class="ic">🌅</span>Manhã</div><div class="items"><span class="it">Hollywood (anos 30)</span><span class="it">Transformers</span><span class="it">Fast &amp; Furious</span><span class="it">Beco Diagonal (Diagon Alley)</span><span class="it star">Dragão de Gringotts 🔥 (a cada ~10 min)</span></div></div>
+      <div class="period t"><div class="pname"><span class="ic">🌤️</span>Tarde</div><div class="items"><span class="it">Escape from Gringotts</span><span class="it">MIB (Homens de Preto)</span><span class="it">The Simpsons Ride</span><span class="it eat">Almoço: Louie's / Leaky Cauldron</span><span class="it">DreamWorks / E.T.</span></div></div>
+      <div class="period n"><div class="pname"><span class="ic">🌙</span>Noite</div><div class="items"><span class="it">Hollywood Rip Ride Rockit</span><span class="it">Mummy</span><span class="it">Jimmy Fallon</span><span class="it">Minions</span><span class="it">Show no lago</span><span class="it">Hogwarts Express (trem)</span></div></div>
+      <div class="tipc"><span class="tag">Dica do consultor</span>Ataque a <strong>Diagon Alley logo de manhã</strong> (Escape from Gringotts), como ela planejou. O <strong>Hogwarts Express</strong> só funciona com ingresso <strong>Park-to-Park</strong> e liga este parque ao Islands — perfeito para emendar com o dia seguinte.</div>
+    </div>
+  </div>
+
+  <!-- 06/12 IOA -->
+  <div class="day uni">
+    <div class="day-head"><span class="dt">Sábado · 06/12</span><h3>🦖 Islands of Adventure</h3><span class="tagpark">escolha da Nathalia ✓</span></div>
+    <div class="periods">
+      <div class="period m"><div class="pname"><span class="ic">🌅</span>Manhã</div><div class="items"><span class="it star">Hagrid's Motorbike 🏍️</span><span class="it">VelociCoaster</span><span class="it">Jurassic Park</span><span class="it">Harry Potter (Hogsmeade)</span></div></div>
+      <div class="period t"><div class="pname"><span class="ic">🌤️</span>Tarde</div><div class="items"><span class="it">Forbidden Journey</span><span class="it">Jurassic Park River</span><span class="it eat">Thunder Falls (almoço)</span><span class="it">Reign of Kong</span><span class="it">Toon Lagoon</span><span class="it">Popeye &amp; Bluto</span></div></div>
+      <div class="period n"><div class="pname"><span class="ic">🌙</span>Noite</div><div class="items"><span class="it">Ripsaw Falls</span><span class="it">Marvel (Spider-Man)</span><span class="it">Hulk</span><span class="it">Doctor Doom's Fearfall</span></div></div>
+      <div class="tipc"><span class="tag">Dica do consultor — ordem de ataque</span><strong>Comece pelo Hagrid's logo na abertura</strong> — é a fila que mais cresce em toda a Universal, fácil passar de 2h depois das 10h. Hagrid's primeiro, VelociCoaster em seguida, e o resto flui como ela montou.</div>
+    </div>
+  </div>
+
+  <p class="phase">Fase 3 — Reta final mais leve (07/12 a 11/12)</p>
+
+  <!-- 07/12 REST -->
+  <div class="day rest">
+    <div class="day-head"><span class="dt">Domingo · 07/12</span><h3>🌴 Descanso</h3><span class="tagpark">respiro depois de 5 parques</span></div>
+    <div class="periods">
+      <div class="period all"><div class="pname"><span class="ic">☀️</span>O dia</div><div class="items"><span class="it">Piscina</span><span class="it">Disney Springs</span><span class="it">Cinema / boliche</span><span class="it">Dormir até tarde</span></div></div>
+      <div class="tipc"><span class="tag">Dica do consultor</span>Esse dia de folga é o que faz a viagem <em>não</em> cansar. Depois de Epic, Hollywood, Magic Kingdom, Universal e Islands, o corpo (e os pés!) agradecem.</div>
+    </div>
+  </div>
+
+  <!-- 08/12 SeaWorld -->
+  <div class="day other">
+    <div class="day-head"><span class="dt">Segunda · 08/12</span><h3>🐬 SeaWorld Orlando</h3><span class="tagpark">o 6º parque — leve, na I-Drive</span></div>
+    <div class="periods">
+      <div class="period m"><div class="pname"><span class="ic">🌅</span>Manhã</div><div class="items"><span class="it">Mako</span><span class="it">Manta</span><span class="it">Kraken</span><span class="it">Pipeline</span></div></div>
+      <div class="period t"><div class="pname"><span class="ic">🌤️</span>Tarde</div><div class="items"><span class="it">Orca Encounter</span><span class="it">Golfinhos</span><span class="it">Leões-marinhos</span><span class="it eat">Almoço no parque</span></div></div>
+      <div class="period n"><div class="pname"><span class="ic">🌙</span>Noite</div><div class="items"><span class="it star">Christmas Celebration (Sea of Trees)</span></div></div>
+      <div class="tipc"><span class="tag">Dica do consultor</span>Fica na I-Drive (deslocamento curto). Russas fortes de manhã, shows de animais à tarde — equilíbrio gostoso. A decoração de Natal ao anoitecer fecha o dia.</div>
+    </div>
+  </div>
+
+  <!-- 09/12 REST -->
+  <div class="day rest">
+    <div class="day-head"><span class="dt">Terça · 09/12</span><h3>🛍️ Descanso & últimas compras</h3><span class="tagpark">véspera da volta</span></div>
+    <div class="periods">
+      <div class="period all"><div class="pname"><span class="ic">☀️</span>O dia</div><div class="items"><span class="it">Compras de última hora</span><span class="it">Mall at Millenia / Florida Mall</span><span class="it">Piscina</span><span class="it">Arrumar as malas</span></div></div>
+      <div class="tipc"><span class="tag">Dica do consultor</span>Feche as compras (eletrônicos, presentes) e <strong>arrume as malas com calma</strong> — pesar a bagagem aqui evita susto no aeroporto. Separe o que vai na mão para o voo.</div>
+    </div>
+  </div>
+
+  <!-- 10/12 -->
+  <div class="day travel">
+    <div class="day-head"><span class="dt">Quarta · 10/12</span><h3>✈️ Volta para casa</h3><span class="tagpark">voo às 17h</span></div>
+    <div class="periods">
+      <div class="period m"><div class="pname"><span class="ic">🌅</span>Manhã</div><div class="items"><span class="it">Check-out até ~11h</span><span class="it">Últimas compras / almoço</span><span class="it">Devolução do carro no MCO</span></div></div>
+      <div class="period t"><div class="pname"><span class="ic">🛫</span>Tarde</div><div class="items"><span class="it">No aeroporto por volta das 14h</span><span class="it">Embarque · voo 17h</span></div></div>
+      <div class="tipc"><span class="tag">Dica do consultor</span>Voo internacional pede ~3h de antecedência. Devolva o carro no Rental Car Center antes do check-in. Confira o limite de bagagem da companhia para não pagar excesso.</div>
+    </div>
+  </div>
+
+  <!-- 11/12 -->
+  <div class="day travel">
+    <div class="day-head"><span class="dt">Quinta · 11/12</span><h3>🛬 Chegada em Salvador · 06h</h3><span class="tagpark">fim da viagem</span></div>
+    <div class="periods">
+      <div class="period m"><div class="pname"><span class="ic">🏠</span>Manhã</div><div class="items"><span class="it">Desembarque em Salvador</span><span class="it">Casa</span><span class="it star">Descansar de uma viagem inesquecível 🎉</span></div></div>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <div><b>Roteiro Completo — Orlando 2026</b> · Família Viana · 22/11 a 11/12</div>
+    <div>Sequência e atrações dos parques escolhidas pela Nathalia. EPCOT e Busch Gardens foram retirados para deixar a viagem mais leve. Mecânicas dos parques e datas de festa mudam — confirme nos apps oficiais.</div>
+  </div>
+</footer>
+</body>
+</html>

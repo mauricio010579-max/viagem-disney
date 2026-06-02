@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dia da Nathalia · 03/12 · Magic Kingdom · Os 15 Anos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#FCF3F6;--ink:#2A1B22;--plum:#9C3262;--plum-deep:#6E2247;--gold:#C79A3D;--rose:#E07BA0;--teal:#157C7E;--blue:#264C77;--line:#EAD5DE;--shadow:rgba(42,27,34,.12)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--cream);color:var(--ink);font-family:'Public Sans',sans-serif;line-height:1.62;font-size:17px;overflow-x:hidden}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.04;background-image:radial-gradient(var(--plum) .5px,transparent .5px);background-size:5px 5px}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;line-height:1.1;font-weight:900}
+  .hero{position:relative;color:var(--cream);overflow:hidden;padding:80px 0 64px;background:radial-gradient(760px 440px at 84% -10%,rgba(58,110,165,.5),transparent 60%),radial-gradient(620px 520px at 2% 115%,rgba(224,123,160,.55),transparent 55%),linear-gradient(160deg,#2A1B22,#3A2A4A 55%,#264C77)}
+  .hero .wrap{position:relative;z-index:2}
+  .kicker{font-weight:700;letter-spacing:.3em;text-transform:uppercase;font-size:.7rem;color:var(--gold);margin-bottom:18px}
+  .hero h1{font-size:clamp(2.6rem,6.5vw,4.6rem);letter-spacing:-.02em}
+  .hero h1 em{font-style:italic;font-weight:500;color:var(--rose)}
+  .hero .sub{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(1.05rem,2.3vw,1.4rem);color:rgba(252,243,246,.88);margin-top:16px;max-width:640px}
+  .hero .when{display:inline-block;margin-top:26px;border:1px solid rgba(252,243,246,.3);border-radius:999px;padding:9px 20px;font-size:.85rem;font-weight:600}
+  .hero .when b{color:var(--gold)}
+  .balloon{position:absolute;border-radius:50%;filter:blur(2px);opacity:.5;z-index:1}
+  section{padding:56px 0;position:relative;z-index:2}
+  section+section{border-top:1px solid var(--line)}
+  .sec-num{font-family:'Fraunces',serif;font-style:italic;color:var(--plum);font-size:1rem;font-weight:600;display:block;margin-bottom:6px}
+  h2{font-size:clamp(1.9rem,4.4vw,2.7rem);letter-spacing:-.015em;margin-bottom:10px}
+  h2 .u{background:linear-gradient(transparent 62%,rgba(224,123,160,.4) 62%)}
+  .lead{font-size:1.1rem;color:#5a3c48;max-width:740px;margin-bottom:26px}
+  h3{font-size:1.35rem;margin:28px 0 10px}
+  p{margin-bottom:13px}
+  .timeline{margin:20px 0}
+  .slot{display:grid;grid-template-columns:120px 1fr;gap:0;border-bottom:1px dashed var(--line);padding:15px 0}
+  .slot:last-child{border-bottom:none}
+  .slot .t{font-weight:700;color:var(--plum);font-size:.9rem}
+  .slot .c h4{font-size:1.08rem;margin-bottom:3px}
+  .slot .c p{font-size:.94rem;color:#5a3c48;margin:0}
+  @media(max-width:620px){.slot{grid-template-columns:1fr;gap:2px}}
+  .tip{background:#F6E9EF;border-left:5px solid var(--rose);border-radius:0 12px 12px 0;padding:14px 18px;margin:16px 0;font-size:.94rem}
+  .tip .tag{font-weight:700;color:var(--plum-deep);display:block;margin-bottom:3px;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase}
+  .warn{background:#FBF1E2;border-left:5px solid var(--gold);border-radius:0 12px 12px 0;padding:14px 18px;margin:16px 0;font-size:.94rem}
+  .warn .tag{font-weight:700;color:#9a7320;display:block;margin-bottom:3px;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase}
+  ul{list-style:none;margin:12px 0}
+  li{margin-bottom:9px;padding-left:26px;position:relative;font-size:.96rem}
+  li::before{content:"\2665";position:absolute;left:2px;top:0;color:var(--rose);font-size:.9rem}
+  footer{background:#2A1B22;color:rgba(252,243,246,.75);padding:40px 0;font-size:.84rem;position:relative;z-index:2}
+  footer b{color:var(--gold)}
+  @keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+  .reveal{animation:rise .7s both}
+</style>
+<style>.sitenav{position:sticky;top:0;z-index:60;background:rgba(252,243,246,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,.08)}.sitenav .inner{display:flex;align-items:center;gap:6px;overflow-x:auto;padding:10px 20px;max-width:1080px;margin:0 auto}.sitenav .brand{font-family:Fraunces,serif;font-weight:900;font-size:.9rem;color:#9C3262;white-space:nowrap;margin-right:8px;text-decoration:none}.sitenav a{white-space:nowrap;text-decoration:none;color:#2A1B22;font-size:.78rem;font-weight:700;padding:6px 12px;border-radius:999px;transition:.2s}.sitenav a:hover{background:#9C3262;color:#fff}.sitenav a.active{background:#9C3262;color:#fff}</style>
+</head>
+<body>
+<nav class="sitenav"><div class="inner"><a class="brand" href="index.html">🏰 Orlando 2026</a>
+<a href="index.html">Início</a>
+<a href="plano-nathalia.html">Roteiro</a>
+<a href="guia-parques.html">Parques</a>
+<a class="active" href="dia-da-nathalia.html">Aniversário</a>
+<a href="cartao-reservas.html">Reservas</a>
+<a href="roteiro-orlando.html">Custos & Dicas</a><a href="album.html">Álbum</a>
+</div></nav>
+
+<header class="hero">
+  <span class="balloon" style="width:110px;height:140px;background:var(--rose);top:40px;right:9%"></span>
+  <span class="balloon" style="width:70px;height:90px;background:var(--gold);top:130px;right:24%"></span>
+  <div class="wrap reveal">
+    <span class="kicker">O coração da viagem</span>
+    <h1>Dia da <em>Nathalia</em><br>Os 15 anos no castelo 🏰</h1>
+    <p class="sub">Ela escolheu — e é perfeito: o aniversário no Magic Kingdom, com café entre personagens, almoço dentro do castelo da Cinderela e fogos à noite.</p>
+    <span class="when">🗓️ <b>Quinta, 03/12/2026</b> · Magic Kingdom</span>
+  </div>
+</header>
+<section>
+  <div class="wrap">
+    <span class="sec-num">01 — A escolha dela</span>
+    <h2>Por que o <span class="u">castelo</span> é o lugar certo</h2>
+    <p class="lead">A Nathalia decidiu passar o aniversário no Magic Kingdom — e poucas coisas combinam mais com 15 anos do que comemorar dentro do castelo da Cinderela. O dia inteiro gira em torno de três momentos mágicos que ela já tinha mapeado na planilha:</p>
+    <ul>
+      <li><strong>Café no Chef Mickey's:</strong> começar o dia tomando café com o Mickey, a Minnie e a turma passando de mesa em mesa. Um abre-alas alegre para o aniversário.</li>
+      <li><strong>Almoço no Cinderella's Royal Table:</strong> almoçar literalmente dentro do castelo, o restaurante mais concorrido (e mais "princesa") do parque.</li>
+      <li><strong>Fogos à noite sobre o castelo:</strong> o show noturno do Magic Kingdom fechando o dia — um dos espetáculos mais bonitos de toda Orlando.</li>
+    </ul>
+    <div class="tip"><span class="tag">A primeira parada do dia</span>Logo na entrada, peça no <strong>Guest Relations</strong> o <strong>botão "Happy Birthday" grátis</strong> com o nome da Nathalia. O dia inteiro os funcionários vão parabenizá-la — é simples e ela vai amar.</div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <span class="sec-num">02 — Hora a hora</span>
+    <h2>O plano do <span class="u">dia dela</span></h2>
+    <p class="lead">Montado em cima da própria planilha da Nathalia, com as atrações na ordem que rende menos fila — sobrando tempo para os momentos de comemoração.</p>
+    <div class="timeline">
+      <div class="slot"><div class="t">7h (na cama)</div><div class="c"><h4>Fila virtual do Tron Lightcycle / Run</h4><p>Entre no app My Disney Experience às 7h em ponto e garanta o grupo da fila virtual gratuita do Tron (ou o Lightning Lane individual).</p></div></div>
+      <div class="slot"><div class="t">8h–9h</div><div class="c"><h4>Café no Chef Mickey's 🥞</h4><p>No hotel Contemporary (monorail até o parque). Café com personagens — o começo do aniversário.</p></div></div>
+      <div class="slot"><div class="t">Rope drop</div><div class="c"><h4>Botão de aniversário + Fantasyland</h4><p>Pegue o botão no Guest Relations e ataque o Seven Dwarfs Mine Train e o Peter Pan's Flight, que enchem rápido.</p></div></div>
+      <div class="slot"><div class="t">Manhã</div><div class="c"><h4>Adventureland & Frontierland</h4><p>Pirates of the Caribbean, Big Thunder Mountain, Tiana's Bayou — e o famoso <strong>Dole Whip</strong> (o sorvete de abacaxi que ela anotou!).</p></div></div>
+      <div class="slot"><div class="t">~12h</div><div class="c"><h4>Almoço no Cinderella's Royal Table 👑</h4><p>O ponto alto: almoçar dentro do castelo. Avise na chegada que é aniversário dela.</p></div></div>
+      <div class="slot"><div class="t">Tarde</div><div class="c"><h4>Liberty Square + o truque do Tron</h4><p>Haunted Mansion, Hall of Presidents. Durante a <strong>parada da tarde</strong>, a fila do Tron despenca — hora de ir nele, como ela planejou.</p></div></div>
+      <div class="slot"><div class="t">Fim de tarde</div><div class="c"><h4>Tomorrowland</h4><p>Space Mountain, Buzz Lightyear e a Ariel (Under the Sea), antes de jantar.</p></div></div>
+      <div class="slot"><div class="t">Noite</div><div class="c"><h4>Fogos sobre o castelo 🎆</h4><p>Escolha um lugar na Main Street ou perto do castelo ~30 min antes. O encerramento perfeito do aniversário.</p></div></div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <span class="sec-num">03 — Para confirmar antes</span>
+    <h2>Dois <span class="u">detalhes</span> importantes</h2>
+    <div class="warn"><span class="tag">1 · Noite de festa de Natal</span>Em noites selecionadas de nov/dez acontece a <strong>Mickey's Very Merry Christmas Party</strong>, e nessas noites o Magic Kingdom <strong>fecha cedo (≈18h)</strong> para quem não tem o ingresso da festa. Confirme se 03/12 é uma dessas noites. Se for, você tem duas saídas: comprar o ingresso da festa (que vira um aniversário inesquecível, com parada e fogos exclusivos e doces à vontade) ou ajustar o dia do parque. <strong>Eu adoraria a opção da festa</strong> — é mágica e cai no aniversário.</div>
+    <div class="warn"><span class="tag">2 · Chef Mickey's fica no hotel</span>O Chef Mickey's é no <strong>hotel Contemporary</strong>, não dentro do parque — mas é coladinho, ligado por monorail (ou até a pé). Reserve o café para 8h–9h para dar tempo de chegar ao rope drop sem correria.</div>
+  </div>
+</section>
+<section>
+  <div class="wrap">
+    <span class="sec-num">04 — Os detalhes que ela vai lembrar</span>
+    <h2>Toques extras de <span class="u">aniversário</span></h2>
+    <ul>
+      <li><strong>Botão "Happy Birthday" grátis:</strong> no Guest Relations da entrada. Os funcionários param para parabenizá-la o dia todo.</li>
+      <li><strong>Memory Maker:</strong> o pacote de fotos ilimitadas dos fotógrafos PhotoPass. Vale muito a pena para registrar os 15 com qualidade — peça as poses "mágicas" no castelo.</li>
+      <li><strong>Sobremesa de aniversário:</strong> avise no Cinderella's Royal Table, na hora da reserva e na chegada, que é aniversário dela — costuma render um mimo especial.</li>
+      <li><strong>Os cenários de foto da viagem:</strong> o <strong>castelo da Cinderela</strong> (hoje), o <strong>Celestial Park do Epic Universe à noite</strong> (01/12) e a Hogsmeade/Diagon Alley da Universal. Reserve 15 min em cada um só para fotos.</li>
+      <li><strong>Lembrança dos 15:</strong> as lojas da Main Street têm pins, orelhas e itens de aniversário — um souvenir simbólico da data.</li>
+      <li><strong>Bolo em família:</strong> num dos dias de descanso, um bolo do Publix na hospedagem fecha a comemoração de um jeito intimista.</li>
+    </ul>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div><b>Dia da Nathalia — 03/12/2026 · Magic Kingdom</b> · Companion do Roteiro Orlando 2026 · Família Viana</div>
+    <div>Datas de festa de Natal e horários de show mudam — confirme o calendário de 2026 do Magic Kingdom quando a Disney divulgar.</div>
+  </div>
+</footer>
+</body>
+</html>

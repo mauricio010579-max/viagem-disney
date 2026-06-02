@@ -1,0 +1,9 @@
+# Configuração de publicação no Netlify
+# Como usar: arraste a pasta inteira em https://app.netlify.com/drop
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200

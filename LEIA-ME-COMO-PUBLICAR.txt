@@ -1,0 +1,89 @@
+=====================================================
+ SITE — ORLANDO 2026 · OS 15 ANOS DA NATHALIA
+ Como colocar no ar (passo a passo)
+=====================================================
+
+IMPORTANTE: mantenha TODOS os arquivos na MESMA pasta,
+sem renomear nenhum. Os links entre as páginas dependem
+dos nomes dos arquivos.
+
+Arquivos do site:
+  - index.html              (página inicial / home)
+  - plano-nathalia.html     (roteiro completo)
+  - guia-parques.html       (guia hora a hora)
+  - dia-da-nathalia.html    (o aniversário)
+  - cartao-reservas.html    (reservas Disney)
+  - roteiro-orlando.html    (custos, hospedagem, dicas)
+  - netlify.toml            (config de publicação)
+  - /img                    (pasta para a foto da Nathalia)
+
+-----------------------------------------------------
+OPÇÃO 1 — NETLIFY DROP (mais fácil, 2 minutos)
+-----------------------------------------------------
+1. Abra: https://app.netlify.com/drop
+2. Arraste a PASTA INTEIRA para a área indicada.
+3. Pronto! Ele gera um link público (ex.: nome.netlify.app).
+4. Compartilhe esse link com a família.
+   (Para um endereço fixo, crie uma conta grátis no Netlify.)
+
+-----------------------------------------------------
+OPÇÃO 2 — GITHUB PAGES (grátis e permanente)
+-----------------------------------------------------
+1. Crie conta em github.com
+2. Crie um repositório novo (ex.: orlando-nathalia)
+3. Faça upload de todos os arquivos
+4. Settings > Pages > Branch: main > Save
+5. O site fica em: seu-usuario.github.io/orlando-nathalia
+
+-----------------------------------------------------
+OPÇÃO 3 — DOMÍNIO PRÓPRIO (ex.: orlandonathalia.com.br)
+-----------------------------------------------------
+1. Registre o domínio (registro.br ~R$40/ano)
+2. Publique pelo Netlify (Opção 1) com conta criada
+3. Em Domain settings, aponte seu domínio
+   (o Netlify mostra os passos de DNS)
+
+
+-----------------------------------------------------
+ÁLBUM DE FOTOS (página album.html)
+-----------------------------------------------------
+Para adicionar fotos ao álbum:
+1. Salve as imagens na pasta  img/
+2. Abra o arquivo  fotos.js  e adicione uma linha por foto:
+     { arquivo: "minha-foto.jpg", legenda: "O que quiser" },
+3. Salve e suba para o GitHub. As fotos aparecem sozinhas.
+(Se uma foto listada não existir, o site só não a mostra — nada quebra.)
+
+=====================================================
+QUANDO TIVER A FOTO E O HORÁRIO DO VOO:
+=====================================================
+- FOTO: salve a imagem da Nathalia dentro da pasta /img
+  com o nome  nathalia.jpg
+  (a home já está preparada para exibi-la automaticamente)
+
+- HORÁRIO DO VOO: me envie que eu ajusto a contagem
+  regressiva para o horário exato do embarque.
+=====================================================
+
+=====================================================
+ÁLBUM NO GOOGLE FOTOS (subir fotos pelo celular)
+=====================================================
+Como criar o álbum compartilhado (faça uma vez, pelo celular):
+1. Abra o app GOOGLE FOTOS
+2. Toque em "Coleções" > "Álbum" > "Novo álbum"
+3. Dê um nome (ex.: "Orlando 2026 - 15 anos da Nathalia")
+4. Adicione algumas fotos e toque em CONCLUIR
+5. Toque no ícone de COMPARTILHAR > "Criar link"
+6. COPIE o link gerado
+
+Depois, coloque o link no site:
+- Abra o arquivo  album.html
+- Procure por:  COLE_AQUI_O_LINK_DO_GOOGLE_FOTOS
+- Troque por (cole) o link copiado, salve e suba ao GitHub
+- O botão "Abrir nosso álbum no Google Fotos" passa a funcionar
+
+DICA: nas configurações do álbum, ative "Colaborar" para que
+todos da família possam adicionar fotos pelo próprio celular.
+E ative o BACKUP automático do Google Fotos para as fotos
+entrarem sem esforço durante a viagem.
+=====================================================

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cartão de Reservas · Restaurantes Disney · Orlando 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#FCF3F6;--ink:#2A1B22;--plum:#9C3262;--plum-deep:#6E2247;--gold:#C79A3D;--rose:#E07BA0;--teal:#157C7E;--blue:#264C77;--line:#EAD5DE;--shadow:rgba(42,27,34,.12)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--cream);color:var(--ink);font-family:'Public Sans',sans-serif;line-height:1.55;font-size:16px}
+  .wrap{max-width:860px;margin:0 auto;padding:0 22px}
+  h1,h2,h3{font-family:'Fraunces',serif;line-height:1.12;font-weight:900}
+  .hero{color:var(--cream);padding:54px 0 40px;background:linear-gradient(150deg,#2A1B22,#4A1F38 60%,#2A1B22)}
+  .kicker{font-weight:700;letter-spacing:.28em;text-transform:uppercase;font-size:.68rem;color:var(--gold);margin-bottom:14px}
+  .hero h1{font-size:clamp(2rem,5vw,3.1rem);letter-spacing:-.02em}
+  .hero h1 em{font-style:italic;color:var(--rose);font-weight:400}
+  .hero p{font-family:'Fraunces',serif;font-style:italic;color:rgba(252,243,246,.85);margin-top:12px;max-width:600px;font-size:1.05rem}
+  section{padding:34px 0}
+  .strategy{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:26px 0;box-shadow:0 14px 36px -28px var(--shadow)}
+  .strategy h2{font-size:1.3rem;margin-bottom:12px;color:var(--plum-deep)}
+  ol{margin:0;padding-left:20px}
+  ol li{margin-bottom:9px;font-size:.96rem}
+  ol li b{color:var(--plum)}
+  .resv{background:#fff;border:1px solid var(--line);border-radius:18px;margin:20px 0;overflow:hidden;box-shadow:0 16px 40px -30px var(--shadow);break-inside:avoid}
+  .resv-head{padding:16px 24px;color:#fff;display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px}
+  .resv.hs .resv-head{background:linear-gradient(135deg,#3A6EA5,var(--blue))}
+  .resv.mk .resv-head{background:linear-gradient(135deg,var(--plum),var(--plum-deep))}
+  .resv-head .when{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;opacity:.92}
+  .resv-head h3{font-size:1.3rem;width:100%}
+  .resv-head .opens{font-size:.8rem;font-weight:700;background:rgba(255,255,255,.16);padding:4px 12px;border-radius:999px}
+  .resv-body{padding:18px 24px}
+  .opt{display:grid;grid-template-columns:128px 1fr;gap:0;padding:11px 0;border-bottom:1px dashed var(--line)}
+  .opt:last-of-type{border-bottom:none}
+  .opt .label{font-weight:700;font-size:.82rem;color:var(--plum)}
+  .opt .label.alt{color:#8a7a82}
+  .opt .detail b{font-size:1rem}
+  .opt .detail span{display:block;font-size:.88rem;color:#5a3c48}
+  .times{display:inline-flex;gap:7px;flex-wrap:wrap;margin-top:3px}
+  .time{font-weight:700;font-size:.82rem;background:#F6E9EF;color:var(--plum-deep);padding:3px 11px;border-radius:8px}
+  .resv.hs .time{background:#E8EFF6;color:var(--blue)}
+  .note{font-size:.86rem;color:#6a5560;margin-top:12px;background:#FBF1E2;border-left:4px solid var(--gold);padding:9px 14px;border-radius:0 10px 10px 0}
+  .bdaytag{font-size:.7rem;font-weight:700;background:var(--gold);color:#2A1B22;padding:3px 10px;border-radius:999px;letter-spacing:.04em}
+  .tip{background:#F6E9EF;border-left:5px solid var(--rose);border-radius:0 12px 12px 0;padding:14px 18px;margin:22px 0;font-size:.94rem}
+  .tip .tag{font-weight:700;color:var(--plum-deep);display:block;margin-bottom:3px;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}
+  footer{background:#2A1B22;color:rgba(252,243,246,.72);padding:30px 0;font-size:.82rem}
+  footer b{color:var(--gold)}
+  .printbtn{display:inline-block;margin-top:18px;background:var(--gold);color:#2A1B22;font-weight:700;border:none;padding:11px 20px;border-radius:999px;cursor:pointer;font-size:.9rem;font-family:'Public Sans'}
+  @media print{
+    body{background:#fff;font-size:12px}
+    .hero{background:#fff;color:#000;padding:10px 0;border-bottom:2px solid var(--plum)}
+    .hero .kicker,.hero p{color:#555}.hero h1 em{color:var(--plum)}
+    .printbtn,.tip{display:none}
+    .resv,.strategy{box-shadow:none;break-inside:avoid}
+    .resv-head{color:#fff !important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    .time,.bdaytag,.note{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    section{padding:10px 0}
+    footer{background:#fff;color:#555}
+  }
+</style>
+<style>.sitenav{position:sticky;top:0;z-index:60;background:rgba(252,243,246,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,.08)}.sitenav .inner{display:flex;align-items:center;gap:6px;overflow-x:auto;padding:10px 20px;max-width:1080px;margin:0 auto}.sitenav .brand{font-family:Fraunces,serif;font-weight:900;font-size:.9rem;color:#9C3262;white-space:nowrap;margin-right:8px;text-decoration:none}.sitenav a{white-space:nowrap;text-decoration:none;color:#2A1B22;font-size:.78rem;font-weight:700;padding:6px 12px;border-radius:999px;transition:.2s}.sitenav a:hover{background:#9C3262;color:#fff}.sitenav a.active{background:#9C3262;color:#fff}</style>
+</head>
+<body>
+<nav class="sitenav"><div class="inner"><a class="brand" href="index.html">🏰 Orlando 2026</a>
+<a href="index.html">Início</a>
+<a href="plano-nathalia.html">Roteiro</a>
+<a href="guia-parques.html">Parques</a>
+<a href="dia-da-nathalia.html">Aniversário</a>
+<a class="active" href="cartao-reservas.html">Reservas</a>
+<a href="roteiro-orlando.html">Custos & Dicas</a><a href="album.html">Álbum</a>
+</div></nav>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="kicker">Plano de ataque · Reservas Disney</span>
+    <h1>Cartão de <em>reservas</em></h1>
+    <p>Alinhado ao plano da Nathalia. Tenha esta página aberta na manhã de cada data — horário-alvo + alternativas prontas.</p>
+    <button class="printbtn" onclick="window.print()">🖨️ Imprimir / salvar em PDF</button>
+  </div>
+</header>
+<div class="wrap">
+  <section>
+    <div class="strategy">
+      <h2>Os 6 passos da manhã da reserva</h2>
+      <ol>
+        <li><b>Esteja logado às 5h55</b> (horário da Flórida = ~6h55 na Bahia) no app <b>My Disney Experience</b> ou no site, com a tela do restaurante já aberta.</li>
+        <li><b>Cartão cadastrado e os 4 nomes</b> já no sistema antes do dia — não dá para perder segundo digitando.</li>
+        <li>Às <b>6h em ponto</b> (Flórida), atualize e busque para <b>4 pessoas</b> na data certa.</li>
+        <li>Se o horário-alvo não aparecer, <b>pegue QUALQUER horário disponível na hora</b> — melhor garantir a mesa e ajustar depois.</li>
+        <li><b>Truque do "modificar":</b> com a reserva já feita, use <em>Modify/Modificar</em> para trocar para um horário melhor sem perder a que você tem.</li>
+        <li><b>Cancelamentos aparecem o tempo todo:</b> se ficou com horário ruim, cheque de novo nos dias seguintes (e na véspera) — vagas voltam constantemente.</li>
+      </ol>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="resv hs">
+      <div class="resv-head">
+        <span class="when">Reserva 1 · 02/12 · Hollywood Studios</span>
+        <span class="opens">Abre 03/10/2026 · 6h FL</span>
+        <h3>🚀 Almoço temático <span style="font-weight:400;font-size:.8rem;opacity:.85">(opcional)</span></h3>
+      </div>
+      <div class="resv-body">
+        <div class="opt"><div class="label">Alvo</div><div class="detail"><b>Sci-Fi Dine-In Theater</b><span>Mesas dentro de "carros de cinema" assistindo a trailers antigos — divertidíssimo para o Davi e a Nathalia.</span><div class="times"><span class="time">12h00</span><span class="time">12h45</span><span class="time">13h30</span></div></div></div>
+        <div class="opt"><div class="label alt">Alternativa</div><div class="detail"><b>Oga's Cantina</b> (bar de Star Wars)<span>Reserva de ~45 min para drinks sem álcool e petiscos — pausa temática no dia da Galaxy's Edge.</span><div class="times"><span class="time">14h00</span><span class="time">15h00</span><span class="time">16h00</span></div></div></div>
+        <div class="note">Como é um dia de rope drop pesado (Rise of the Resistance), o almoço no meio do dia cai bem para recarregar.</div>
+      </div>
+    </div>
+  </section>
+  <section style="padding-top:0">
+    <div class="resv mk">
+      <div class="resv-head">
+        <span class="when">Reserva 2 · 03/12 · Magic Kingdom</span>
+        <span class="bdaytag">🎂 15 ANOS</span>
+        <span class="opens">Abre 04/10/2026 · 6h FL</span>
+        <h3>🏰 O dia do aniversário — duas reservas no mesmo dia</h3>
+      </div>
+      <div class="resv-body">
+        <div class="opt"><div class="label">Café ⭐</div><div class="detail"><b>Chef Mickey's</b> (café da manhã com personagens)<span>No hotel Contemporary, ligado ao parque por monorail. Mickey, Minnie e turma passam nas mesas — começo de aniversário perfeito.</span><div class="times"><span class="time">8h00</span><span class="time">8h30</span><span class="time">9h00</span></div></div></div>
+        <div class="opt"><div class="label">Almoço ⭐</div><div class="detail"><b>Cinderella's Royal Table</b> 👑<span>Dentro do castelo — o momento "princesa" dos 15 anos. É o restaurante mais concorrido do parque; mire o horário e, se não abrir, pegue qualquer um e modifique.</span><div class="times"><span class="time">12h00</span><span class="time">12h45</span><span class="time">13h30</span></div></div></div>
+        <div class="opt"><div class="label alt">Plano B almoço</div><div class="detail"><b>The Crystal Palace</b> (buffet, personagens do Ursinho Pooh)<span>Se o Cinderella's esgotar — também dentro do parque, com personagens.</span><div class="times"><span class="time">12h15</span><span class="time">13h00</span><span class="time">13h45</span></div></div></div>
+        <div class="note">⚠️ Os dois (Chef Mickey's e Cinderella's) abrem na <b>mesma data, 04/10</b>. Como Cinderella's some em minutos, tente <b>ele primeiro</b> às 6h em ponto e o Chef Mickey's logo em seguida (o café tem mais vagas). Confirme também se 03/12 é <b>noite de festa de Natal</b> (o parque fecha cedo para quem não tem o ingresso da festa).</div>
+      </div>
+    </div>
+  </section>
+  <div class="tip">
+    <span class="tag">Por que esses horários</span>
+    Café às 8h–9h dá tempo de chegar ao rope drop sem correria. O almoço no castelo ao meio-dia encaixa entre as atrações da manhã e a parada da tarde (lembra do truque: sair da parada e ir para o Tron). Ajuste 15–30 min conforme o que aparecer — garanta a mesa primeiro e refine com o "modificar".
+  </div>
+  <div class="tip" style="border-left-color:var(--teal);background:#EAF4F2">
+    <span class="tag" style="color:var(--teal)">Lembrete dos parques restantes</span>
+    Epic Universe (01/12), Universal Studios (05/12), Islands of Adventure (06/12) e SeaWorld (08/12) <b>não exigem reserva de restaurante com antecedência</b> — você decide na hora, pelo app, no próprio dia. Só os restaurantes Disney pedem a corrida dos 60 dias.
+  </div>
+</div>
+<footer>
+  <div class="wrap">
+    <div><b>Cartão de Reservas</b> · alinhado ao plano da Nathalia · Orlando 2026 · Família Viana</div>
+    <div>Horários são alvos sugeridos; a disponibilidade real depende da liberação da Disney. A janela de 60 dias abre às 6h, horário da Flórida.</div>
+  </div>
+</footer>
+</body>
+</html>

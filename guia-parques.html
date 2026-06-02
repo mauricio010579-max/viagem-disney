@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia Hora a Hora · 8 Parques · Orlando 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#FBF5EA;--ink:#241B12;--coral:#E8623D;--coral-deep:#C23E1E;--teal:#157C7E;--teal-deep:#0E5A5C;--gold:#C79A3D;--plum:#9C3262;--night:#1C2230;--blue:#3A6EA5;--blue-deep:#264C77;--line:#E2D5BF;--shadow:rgba(36,27,18,.10)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--cream);color:var(--ink);font-family:'Public Sans',sans-serif;line-height:1.6;font-size:17px;overflow-x:hidden}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.035;background-image:radial-gradient(var(--ink) .5px,transparent .5px);background-size:4px 4px}
+  .wrap{max-width:980px;margin:0 auto;padding:0 24px}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;line-height:1.1;font-weight:900}
+  .hero{position:relative;color:var(--cream);overflow:hidden;padding:74px 0 60px;background:radial-gradient(800px 460px at 82% -10%,rgba(232,98,61,.5),transparent 60%),radial-gradient(620px 520px at 4% 115%,rgba(21,124,126,.5),transparent 55%),linear-gradient(160deg,#241B12,#2E2336 55%,#1C2230)}
+  .hero .wrap{position:relative;z-index:2}
+  .kicker{font-weight:700;letter-spacing:.3em;text-transform:uppercase;font-size:.7rem;color:var(--gold);margin-bottom:18px}
+  .hero h1{font-size:clamp(2.4rem,6vw,4rem);letter-spacing:-.02em}
+  .hero h1 em{font-style:italic;font-weight:500;color:var(--coral)}
+  .hero .sub{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(1rem,2.2vw,1.35rem);color:rgba(251,245,234,.85);margin-top:16px;max-width:640px}
+  nav.toc{position:sticky;top:0;z-index:20;background:rgba(251,245,234,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav.toc .inner{display:flex;gap:6px;overflow-x:auto;padding:11px 24px;max-width:980px;margin:0 auto}
+  nav.toc a{white-space:nowrap;text-decoration:none;color:var(--ink);font-size:.78rem;font-weight:700;padding:6px 13px;border-radius:999px;transition:.2s}
+  nav.toc a:hover{background:var(--coral);color:var(--cream)}
+  .legend{padding:30px 0 6px}
+  .legend .wrap{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+  .badge{font-size:.74rem;font-weight:700;padding:5px 13px;border-radius:999px;color:#fff}
+  .b-disney{background:var(--blue-deep)} .b-uni{background:var(--coral-deep)} .b-other{background:var(--teal-deep)}
+  .intro{font-family:'Fraunces',serif;font-style:italic;color:#4a3c2c;font-size:1.02rem}
+
+  .park{margin:30px 0;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 18px 44px -30px var(--shadow)}
+  .park-head{padding:22px 26px;color:#fff;position:relative}
+  .park.disney .park-head{background:linear-gradient(135deg,var(--blue),var(--blue-deep))}
+  .park.uni .park-head{background:linear-gradient(135deg,var(--coral),var(--coral-deep))}
+  .park.other .park-head{background:linear-gradient(135deg,var(--teal),var(--teal-deep))}
+  .park-head .day{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;opacity:.9}
+  .park-head h2{font-size:clamp(1.6rem,3.4vw,2.2rem);margin:4px 0 0}
+  .park-head .meta{font-family:'Fraunces',serif;font-style:italic;font-size:.98rem;margin-top:6px;opacity:.95}
+  .park-body{padding:8px 26px 24px}
+  .row{display:grid;grid-template-columns:128px 1fr;gap:0;border-bottom:1px dashed var(--line);padding:14px 0}
+  .row:last-child{border-bottom:none}
+  .row .when{font-weight:700;color:var(--coral-deep);font-size:.86rem;padding-top:2px}
+  .park.disney .row .when{color:var(--blue-deep)} .park.other .row .when{color:var(--teal-deep)}
+  .row .what h4{font-size:1.04rem;margin-bottom:3px}
+  .row .what p{font-size:.93rem;color:#4a3c2c;margin:0}
+  @media(max-width:640px){.row{grid-template-columns:1fr;gap:2px}.row .when{font-size:.8rem}}
+
+  .keybox{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 4px}
+  .key{font-size:.76rem;font-weight:700;padding:6px 13px;border-radius:10px;background:#F2E7D2;color:#6b5535}
+  .key b{color:var(--coral-deep)}
+  .tip{background:#EAF4F2;border-left:5px solid var(--teal);border-radius:0 12px 12px 0;padding:13px 18px;margin:14px 0 0;font-size:.92rem}
+  .tip .tag{font-weight:700;color:var(--teal-deep);display:block;margin-bottom:2px;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase}
+  .warn{background:#FBEFE6;border-left:5px solid var(--gold);border-radius:0 12px 12px 0;padding:13px 18px;margin:14px 0 0;font-size:.92rem}
+  .warn .tag{font-weight:700;color:#9a7320;display:block;margin-bottom:2px;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase}
+  .nathalia{background:linear-gradient(180deg,#fff,#FBF0F4);border-left:5px solid var(--plum);border-radius:0 12px 12px 0;padding:13px 18px;margin:14px 0 0;font-size:.92rem}
+  .nathalia .tag{font-weight:700;color:var(--plum);display:block;margin-bottom:2px;font-size:.74rem;letter-spacing:.06em;text-transform:uppercase}
+
+  section.universal-rules{padding:48px 0;border-top:1px solid var(--line)}
+  section.universal-rules h2{font-size:1.7rem;margin-bottom:8px}
+  ul{list-style:none;margin:10px 0}
+  li{margin-bottom:8px;padding-left:24px;position:relative;font-size:.95rem}
+  li::before{content:"";position:absolute;left:3px;top:.6em;width:8px;height:8px;border-radius:2px;background:var(--coral);transform:rotate(45deg)}
+  footer{background:var(--night);color:rgba(251,245,234,.75);padding:40px 0;font-size:.84rem;position:relative;z-index:2}
+  footer b{color:var(--gold)}
+  @keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+  .reveal{animation:rise .7s both}
+</style>
+<style>.sitenav{position:sticky;top:0;z-index:60;background:rgba(252,243,246,.95);backdrop-filter:blur(10px);border-bottom:1px solid rgba(0,0,0,.08)}.sitenav .inner{display:flex;align-items:center;gap:6px;overflow-x:auto;padding:10px 20px;max-width:1080px;margin:0 auto}.sitenav .brand{font-family:Fraunces,serif;font-weight:900;font-size:.9rem;color:#9C3262;white-space:nowrap;margin-right:8px;text-decoration:none}.sitenav a{white-space:nowrap;text-decoration:none;color:#2A1B22;font-size:.78rem;font-weight:700;padding:6px 12px;border-radius:999px;transition:.2s}.sitenav a:hover{background:#9C3262;color:#fff}.sitenav a.active{background:#9C3262;color:#fff}</style>
+</head>
+<body>
+<nav class="sitenav"><div class="inner"><a class="brand" href="index.html">🏰 Orlando 2026</a>
+<a href="index.html">Início</a>
+<a href="plano-nathalia.html">Roteiro</a>
+<a class="active" href="guia-parques.html">Parques</a>
+<a href="dia-da-nathalia.html">Aniversário</a>
+<a href="cartao-reservas.html">Reservas</a>
+<a href="roteiro-orlando.html">Custos & Dicas</a><a href="album.html">Álbum</a>
+</div></nav>
+
+
+<header class="hero">
+  <div class="wrap reveal">
+    <span class="kicker">Companion do Roteiro · Família Viana</span>
+    <h1>Guia <em>hora a hora</em><br>dos 8 parques</h1>
+    <p class="sub">Para cada parque: que horas chegar, qual atração atacar primeiro, a ordem do dia, onde almoçar e qual fura-fila usar. O segredo de Orlando é a primeira hora.</p>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="inner">
+    <a href="#regra">A regra de ouro</a>
+    <a href="#mk">1 · Magic Kingdom</a>
+    <a href="#epic">2 · Epic Universe</a>
+    <a href="#epcot">3 · EPCOT</a>
+    <a href="#sw">4 · SeaWorld</a>
+    <a href="#ioa">6 · Islands</a>
+    <a href="#usf">7 · Studios</a>
+    <a href="#hs">8 · Hollywood Studios</a>
+    <a href="#busch">9 · Busch Gardens</a>
+  </div>
+</nav>
+
+<section class="legend" id="regra">
+  <div class="wrap">
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:16px">
+      <span class="badge b-disney">Disney</span>
+      <span class="badge b-uni">Universal</span>
+      <span class="badge b-other">Outros</span>
+    </div>
+    <p class="intro" style="max-width:760px">A regra que vale para TODOS os parques: <strong>chegar 30–45 min antes da abertura oficial</strong> (e, na Universal/Epic, antes da Early Park Admission). "Rope drop" não é chegar na hora que abre — é estar <em>dentro</em> do parque, posicionado, quando as atrações começam a rodar. A primeira hora rende o que valeria 3 horas à tarde. Depois das ~14h a fila some um pouco de novo; por isso intercalamos passeios pesados de manhã, almoço/descanso no calor e atrações + shows à tarde/noite.</p>
+  </div>
+</section>
+
+<div class="wrap">
+
+  <!-- ====== MAGIC KINGDOM ====== -->
+  <div class="park disney" id="mk">
+    <div class="park-head">
+      <span class="day">Dia 01/12 · Terça</span>
+      <h2>🏰 Magic Kingdom</h2>
+      <div class="meta">Abertura mágica e coração do aniversário · chegue 45 min antes</div>
+    </div>
+    <div class="park-body">
+      <div class="row"><div class="when">7h (na cama)</div><div class="what"><h4>Entre no app e pegue a fila virtual do Tron</h4><p>A montanha-russa <strong>Tron Lightcycle / Run</strong> costuma usar <strong>fila virtual gratuita</strong> que abre às 7h em ponto no My Disney Experience. Tente garantir um grupo logo de cara (ou compre o Lightning Lane individual dela).</p></div></div>
+      <div class="row"><div class="when">Rope drop</div><div class="what"><h4>Corra para a Fantasyland → Seven Dwarfs Mine Train</h4><p>É a fila que mais cresce no parque. Logo em seguida, <strong>Peter Pan's Flight</strong> (ao lado, também enche rápido).</p></div></div>
+      <div class="row"><div class="when">Manhã</div><div class="what"><h4>Tomorrowland</h4><p>Space Mountain e Buzz Lightyear antes da multidão chegar lá.</p></div></div>
+      <div class="row"><div class="when">~12h</div><div class="what"><h4>Almoço + Adventureland</h4><p>Pirates of the Caribbean, Jungle Cruise. Almoço no Pecos Bill ou Columbia Harbour House (rápidos).</p></div></div>
+      <div class="row"><div class="when">Tarde</div><div class="what"><h4>Frontierland & Liberty Square</h4><p>Big Thunder Mountain, <strong>Tiana's Bayou Adventure</strong> (o toboágua novo) e a clássica Haunted Mansion.</p></div></div>
+      <div class="row"><div class="when">Noite</div><div class="what"><h4>Castelo iluminado + show de fogos</h4><p>O fim de tarde no castelo decorado de Natal e os fogos fecham o dia (e a abertura da comemoração).</p></div></div>
+      <div class="keybox">
+        <span class="key">Fura-fila: <b>Lightning Lane Multi Pass SIM</b> (use em Mine Train, Peter Pan, Space Mountain)</span>
+        <span class="key">Reserva de jantar: Cinderella's Royal Table</span>
+      </div>
+      <div class="warn"><span class="tag">Atenção — noite de festa de Natal</span>A "Mickey's Very Merry Christmas Party" acontece em <strong>noites selecionadas</strong> de nov/dez. Nessas noites o parque <strong>fecha cedo (≈18h)</strong> para quem não tem o ingresso da festa. Confira no calendário se 01/12 é noite de festa: se for, ou você compra o ingresso da festa (vale muito a pena!) ou troca o Magic Kingdom para outro dia.</div>
+      <div class="nathalia"><span class="tag">Toque dos 15 anos</span>Pegue o <strong>botão "Happy Birthday" grátis</strong> no Guest Relations logo na entrada. Se 01/12 for noite de festa de Natal, a festa (com parada, fogos exclusivos e biscoitos/chocolate quente à vontade) seria uma <strong>noite de aniversário inesquecível</strong> para a Nathalia.</div>
+    </div>
+  </div>
+
+  <!-- ====== EPIC UNIVERSE ====== -->
+  <div class="park uni" id="epic">
+    <div class="park-head">
+      <span class="day">Dia 02/12 · Quarta</span>
+      <h2>🌌 Epic Universe</h2>
+      <div class="meta">O parque mais novo e disputado do mundo · chegue 60 min antes</div>
+    </div>
+    <div class="park-body">
+      <div class="row"><div class="when">Antes de abrir</div><div class="what"><h4>Esteja no portão para a Early Park Admission</h4><p>A entrada antecipada hoje cobre <strong>3 terras</strong>: Ministry of Magic, Super Nintendo World e Isle of Berk. Chegue cedo — todo mundo corre para o Harry Potter.</p></div></div>
+      <div class="row"><div class="when">Rope drop</div><div class="what"><h4>Harry Potter and the Battle at the Ministry</h4><p>A atração mais cobiçada do parque. Atacar primeiro garante que, se ela tiver "abertura atrasada", você já está na frente da fila. (É indoor — à prova de chuva.)</p></div></div>
+      <div class="row"><div class="when">Manhã</div><div class="what"><h4>Isle de Berk e Dark Universe (enquanto a galera some no Nintendo)</h4><p><strong>Hiccup's Wing Gliders</strong> (Como Treinar seu Dragão) e <strong>Monsters Unchained</strong> (Dark Universe) — duas das de maior demanda, mais vazias logo cedo.</p></div></div>
+      <div class="row"><div class="when">Meio-dia</div><div class="what"><h4>Stardust Racers (Celestial Park)</h4><p>A montanha-russa de lançamento duplo, no hub central. Almoço na <strong>Pizza Moon</strong> (queridinha) ou no <strong>Toadstool Cafe</strong> (Nintendo).</p></div></div>
+      <div class="row"><div class="when">Tarde</div><div class="what"><h4>Super Nintendo World</h4><p>As filas do Nintendo caem mais à tarde/noite. <strong>Mario Kart: Bowser's Challenge</strong> e <strong>Mine-Cart Madness</strong>. (A pulseira Power-Up Band, ~US$ 40, é opcional — só para os jogos interativos da terra.)</p></div></div>
+      <div class="row"><div class="when">Noite</div><div class="what"><h4>Celestial Park iluminado</h4><p>O hub central à noite é um espetáculo de luzes e fontes — o melhor cenário de foto da viagem inteira.</p></div></div>
+      <div class="keybox">
+        <span class="key">Ingresso: <b>Park-to-Park de 3 dias</b> (acesso livre ao Epic)</span>
+        <span class="key">Fura-fila: Express NÃO cobre o Epic — chegue cedo</span>
+      </div>
+      <div class="nathalia"><span class="tag">Toque dos 15 anos</span>O <strong>Celestial Park à noite</strong> é, disparado, o cenário mais cinematográfico para um ensaio de fotos dos 15.</div>
+    </div>
+  </div>
+
+  <!-- ====== EPCOT ====== -->
+  <div class="park disney" id="epcot">
+    <div class="park-head">
+      <span class="day">Dia 03/12 · Quinta</span>
+      <h2>🌍 EPCOT</h2>
+      <div class="meta">Dia leve, gastronômico e festivo · chegue 30 min antes</div>
+    </div>
+    <div class="park-body">
+      <div class="row"><div class="when">7h (na cama)</div><div class="what"><h4>Fila virtual do Guardians of the Galaxy: Cosmic Rewind</h4><p>A russa mais disputada do EPCOT usa <strong>fila virtual gratuita às 7h</strong> (ou Lightning Lane individual). Garanta o grupo.</p></div></div>
+      <div class="row"><div class="when">Rope drop</div><div class="what"><h4>Test Track e Frozen Ever After</h4><p>As duas que mais enchem. Comece por elas antes do parque encher.</p></div></div>
+      <div class="row"><div class="when">~12h em diante</div><div class="what"><h4>Volta ao mundo no World Showcase</h4><p>Os 11 pavilhões de países. Ritmo de passeio: comer petiscos típicos em cada país (a "comida do mundo" do Festival of the Holidays é o ponto alto para adolescente).</p></div></div>
+      <div class="row"><div class="when">Tarde/noite</div><div class="what"><h4>Festival of the Holidays + show noturno</h4><p>Contadores de histórias de Natal de cada cultura ao redor do lago e, à noite, o show de fogos sobre a lagoa.</p></div></div>
+      <div class="keybox">
+        <span class="key">Fura-fila: <b>opcional</b> (só se a fila do Test Track estourar)</span>
+        <span class="key">Reserva top: Space 220 ("jantar no espaço")</span>
+      </div>
+      <div class="tip"><span class="tag">Por que é o dia certo para respirar</span>Vem depois de dois dias intensos (MK + Epic). EPCOT permite ritmo mais lento, muita comida e caminhada tranquila — ideal para recarregar antes do fim de semana.</div>
+    </div>
+  </div>
+
+  <!-- ====== SEAWORLD ====== -->
+  <div class="park other" id="sw">
+    <div class="park-head">
+      <span class="day">Dia 04/12 · Sexta</span>
+      <h2>🐬 SeaWorld Orlando</h2>
+      <div class="meta">Coasters fortes + shows tranquilos · colado na I-Drive</div>
+    </div>
+    <div class="park-body">
+      <div class="row"><div class="when">Abertura</div><div class="what"><h4>Ataque as montanhas-russas</h4><p><strong>Mako</strong> (hyper), <strong>Manta</strong> (voadora), <strong>Kraken</strong> e <strong>Pipeline</strong> logo cedo, enquanto a fila está curta.</p></div></div>
+      <div class="row"><div class="when">Meio-dia</div><div class="what"><h4>Shows e atrações de animais</h4><p>Orca Encounter, golfinhos, leões-marinhos e o teatro de voo <strong>Expedition Odyssey</strong>. Veja os horários no app ao entrar e monte o dia em volta deles.</p></div></div>
+      <div class="row"><div class="when">Tarde</div><div class="what"><h4>Decoração de Natal (Christmas Celebration)</h4><p>O "Sea of Trees" e a iluminação ao anoitecer fecham o dia. Como fica na I-Drive, dá para voltar cedo e descansar.</p></div></div>
+      <div class="keybox">
+        <span class="key">Ingresso: <b>combinado 2-parques</b> com o Busch Gardens</span>
+        <span class="key">Fura-fila: Quick Queue opcional</span>
+      </div>
+      <div class="nathalia"><span class="tag">Para a Nathalia e o Davi</span>Programa "Dine with Orcas" ou nadar com golfinhos são experiências extras pagas — se quiserem um mimo no estilo aniversário, dá para reservar à parte.</div>
+    </div>
+  </div>
+
+  <!-- ====== ISLANDS OF ADVENTURE ====== -->
+  <div class="park uni" id="ioa">
+    <div class="park-head">
+      <span class="day">Dia 06/12 · Domingo</span>
+      <h2>🦖 Islands of Adventure</h2>
+      <div class="meta">As melhores montanhas-russas da Universal · chegue 40 min antes</div>
+    </div>
+    <div class="park-body">
+      <div class="row"><div class="when">Rope drop</div><div class="what"><h4>Hagrid's Magical Creatures Motorbike Adventure</h4><p>A fila que mais cresce em TODA a Universal — fácil passar de 2h depois das 10h. Vá direto para ela na abertura.</p></div></div>
+      <div class="row"><div class="when">Logo depois</div><div class="what"><h4>Jurassic World VelociCoaster</h4><p>Uma das russas mais intensas dos EUA. Pegue ainda de manhã.</p></div></div>
+      <div class="row"><div class="when">Manhã/meio-dia</div><div class="what"><h4>Hogsmeade + Marvel</h4><p>Harry Potter and the Forbidden Journey (no castelo de Hogwarts), Flight of the Hippogriff, e do outro lado o Hulk e o Homem-Aranha.</p></div></div>
+      <div class="row"><div class="when">Tarde</div><div class="what"><h4>Almoço no Three Broomsticks + Hogwarts Express</h4><p>Cerveja amanteigada nas Três Vassouras e, com o ingresso Park-to-Park, pegue o <strong>trem Hogwarts Express</strong> para conhecer a viagem (você volta amanhã pelo outro lado).</p></div></div>
+      <div class="keybox">
+        <span class="key">Fura-fila: Express <b>não cobre o Hagrid's</b> — por isso o rope drop</span>
+        <span class="key">Park-to-Park: obrigatório p/ o trem</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== UNIVERSAL STUDIOS FLORIDA ====== -->
+  <div class="park uni" id="usf">
+    <div class="park-head">
+      <span class="day">Dia 07/12 · Segunda</span>
+      <h2>🎬 Universal Studios Florida</h2>
+      <div class="meta">Diagon Alley e cinema · chegue 40 min antes</div>
+    </div>
+    <div class="park-body">
+      <div class="row"><div class="when">Rope drop</div><div class="what"><h4>Harry Potter and the Escape from Gringotts</h4><p>A atração-âncora da <strong>Diagon Alley</strong>. Ataque primeiro — a fila cresce rápido.</p></div></div>
+      <div class="row"><div class="when">Manhã</div><div class="what"><h4>Diagon Alley com calma</h4><p>O beco é deslumbrante (com o dragão de Gringotts que solta fogo). Vale explorar lojas e tomar a cerveja amanteigada antes de encher.</p></div></div>
+      <div class="row"><div class="when">Meio-dia</div><div class="what"><h4>Hollywood Rip Ride Rockit, Mummy, Transformers, MIB</h4><p>O bloco de simuladores e russas. Almoço no <strong>Leaky Cauldron</strong> (na Diagon Alley) ou no Mel's Diner.</p></div></div>
+      <div class="row"><div class="when">Tarde</div><div class="what"><h4>ET, Simpsons, Fast & Furious + Hogwarts Express de volta</h4><p>Os clássicos de família e, se quiser, o trem de volta a Islands para uma última atração lá.</p></div></div>
+      <div class="keybox">
+        <span class="key">Park-to-Park: liga Diagon Alley ↔ Hogsmeade pelo trem</span>
+        <span class="key">Fura-fila: Express opcional em dia de semana</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== HOLLYWOOD STUDIOS ====== -->
+  <div class="park disney" id="hs">
+    <div class="park-head">
+      <span class="day">Dia 08/12 · Terça</span>
+      <h2>🚀 Hollywood Studios</h2>
+      <div class="meta">O dia mais "adrenalina" · chegue 45 min antes</div>
+    </div>
+    <div class="park-body">
+      <div class="row"><div class="when">Antes / 7h</div><div class="what"><h4>Garanta a Rise of the Resistance</h4><p>A atração de maior demanda da Disney inteira. Compre o <strong>Lightning Lane individual</strong> dela OU faça rope drop indo direto para lá na abertura. Não deixe para depois.</p></div></div>
+      <div class="row"><div class="when">Rope drop</div><div class="what"><h4>Slinky Dog Dash (Toy Story Land)</h4><p>A russa familiar que mais enche. Logo cedo, antes que a fila exploda.</p></div></div>
+      <div class="row"><div class="when">Manhã</div><div class="what"><h4>Millennium Falcon + Galaxy's Edge</h4><p>Pilotar a Millennium Falcon e explorar a terra de Star Wars (cenário incrível).</p></div></div>
+      <div class="row"><div class="when">Meio-dia</div><div class="what"><h4>Tower of Terror & Rock 'n' Roller Coaster</h4><p>O bloco de adrenalina. Almoço temático no <strong>Sci-Fi Dine-In</strong> (mesas dentro de carros de cinema).</p></div></div>
+      <div class="row"><div class="when">Tarde/noite</div><div class="what"><h4>Mickey & Minnie's Runaway Railway + show noturno</h4><p>E, para os adolescentes, o bar temático <strong>Oga's Cantina</strong> (Star Wars) rende drinks sem álcool muito divertidos.</p></div></div>
+      <div class="keybox">
+        <span class="key">Fura-fila: <b>Lightning Lane Single Pass na Rise of the Resistance</b></span>
+        <span class="key">+ Multi Pass em Slinky e Tower of Terror</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== BUSCH GARDENS ====== -->
+  <div class="park other" id="busch">
+    <div class="park-head">
+      <span class="day">Dia 09/12 · Quarta</span>
+      <h2>🎢 Busch Gardens Tampa</h2>
+      <div class="meta">Bate-volta dos coasters (~1h15 de estrada) · saia cedo</div>
+    </div>
+    <div class="park-body">
+      <div class="row"><div class="when">Cedo</div><div class="what"><h4>Saia de Orlando logo após o café</h4><p>São ~1h15 de estrada. Chegar na abertura é o segredo para pegar as russas sem fila.</p></div></div>
+      <div class="row"><div class="when">Abertura</div><div class="what"><h4>Ataque as russas radicais</h4><p><strong>Iron Gwazi</strong> (híbrida recordista), <strong>SheiKra</strong> (dive coaster), <strong>Montu</strong>, <strong>Kumba</strong>, <strong>Cheetah Hunt</strong>, <strong>Tigris</strong> — o melhor conjunto de montanhas-russas da Flórida.</p></div></div>
+      <div class="row"><div class="when">Meio-dia</div><div class="what"><h4>Safári Serengeti + zoológico</h4><p>800+ animais. O passeio de safári é ótimo no calor, sentado. Almoço no parque.</p></div></div>
+      <div class="row"><div class="when">Fim de tarde</div><div class="what"><h4>Volte com tempo</h4><p>Saia com luz do dia para fazer a estrada tranquilo de volta a Orlando.</p></div></div>
+      <div class="keybox">
+        <span class="key">Sem carro? <b>Shuttle grátis</b> Orlando↔Tampa (reserva por telefone)</span>
+        <span class="key">Fura-fila: Quick Queue opcional</span>
+      </div>
+      <div class="warn"><span class="tag">Se o voo de volta (dia 10) for de manhã</span>Troque este bate-volta por um parque mais perto e leve o Busch Gardens para um dia do meio da semana — você não quer fazer 1h15 de estrada exausto na véspera de um voo cedo.</div>
+    </div>
+  </div>
+
+</div>
+
+<!-- ====== UNIVERSAL RULES / GENERAL ====== -->
+<section class="universal-rules">
+  <div class="wrap">
+    <h2>Cinco hábitos que valem por um fura-fila</h2>
+    <ul>
+      <li><strong>Baixe e configure os apps antes da viagem:</strong> My Disney Experience (Disney) e Universal Orlando Resort (Universal). É por eles que você pega fila virtual, vê tempo de espera e compra Lightning Lane.</li>
+      <li><strong>Acorde para o rope drop nos dias pesados</strong> (MK, Epic, Hollywood Studios, Islands). Nos dias leves (EPCOT, SeaWorld) pode pegar mais leve.</li>
+      <li><strong>Use a "regra das 7h":</strong> filas virtuais (Tron, Guardians, às vezes Rise) abrem às 7h da manhã pelo app, mesmo da cama. Coloque despertador.</li>
+      <li><strong>Almoce cedo (11h) ou tarde (14h)</strong> para fugir do pico dos restaurantes — e aproveite que as filas das atrações também caem nesses horários.</li>
+      <li><strong>Hidrate e leve garrafa:</strong> dezembro é ameno, mas o sol da Flórida cansa. Bebedouros são gratuitos em todos os parques.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>Guia hora a hora — 8 parques</b> · Companion do Roteiro Orlando 2026 · Família Viana</div>
+    <div>Mecânicas (fila virtual, Lightning Lane, noites de festa, Early Park Admission) mudam com frequência — confirme nos apps oficiais dias antes da visita.</div>
+  </div>
+</footer>
+
+</body>
+</html>

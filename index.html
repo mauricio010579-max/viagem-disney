@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orlando 2026 · Os 15 Anos da Nathalia</title>
+<meta name="description" content="Roteiro completo da viagem dos 15 anos da Nathalia a Orlando — 22/nov a 11/dez 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Public+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FCF3F6;--ink:#2A1B22;--plum:#9C3262;--plum-deep:#6E2247;
+    --gold:#C79A3D;--rose:#E07BA0;--coral:#E8623D;--teal:#157C7E;--blue:#3A6EA5;
+    --night:#241326;--line:#EAD5DE;--shadow:rgba(42,27,34,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--cream);color:var(--ink);font-family:'Public Sans',sans-serif;line-height:1.6;font-size:17px;overflow-x:hidden}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.04;background-image:radial-gradient(var(--plum) .5px,transparent .5px);background-size:5px 5px}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;line-height:1.08;font-weight:900}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;color:var(--cream);overflow:hidden;text-align:center;
+    padding:74px 0 80px;
+    background:
+      radial-gradient(700px 420px at 80% -8%,rgba(224,123,160,.55),transparent 60%),
+      radial-gradient(640px 520px at 6% 112%,rgba(199,154,61,.5),transparent 55%),
+      radial-gradient(500px 400px at 95% 100%,rgba(232,98,61,.4),transparent 55%),
+      linear-gradient(160deg,#241326 0%,#4A1F38 55%,#264C77 120%);}
+  .hero .wrap{position:relative;z-index:3}
+  .kicker{font-weight:700;letter-spacing:.34em;text-transform:uppercase;font-size:.7rem;color:var(--gold);margin-bottom:22px}
+  .hero h1{font-size:clamp(2.8rem,8vw,5.4rem);letter-spacing:-.02em}
+  .hero h1 em{font-style:italic;font-weight:500;color:var(--rose)}
+  .hero .sub{font-family:'Fraunces',serif;font-style:italic;font-size:clamp(1.05rem,2.4vw,1.5rem);color:rgba(252,243,246,.9);margin-top:16px}
+  .hero .dates{margin-top:14px;font-size:.95rem;color:rgba(252,243,246,.7);font-weight:600;letter-spacing:.02em}
+  .balloon{position:absolute;border-radius:50% 50% 50% 50%/55% 55% 45% 45%;filter:blur(1px);opacity:.55;z-index:1;animation:float 7s ease-in-out infinite}
+  .balloon::after{content:"";position:absolute;bottom:-14px;left:50%;width:1px;height:16px;background:rgba(255,255,255,.4)}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+
+  /* ---------- COUNTDOWN ---------- */
+  .countdown{display:flex;justify-content:center;gap:10px;margin-top:38px;flex-wrap:wrap}
+  .cd-box{background:rgba(255,255,255,.1);border:1px solid rgba(252,243,246,.22);backdrop-filter:blur(6px);
+    border-radius:16px;padding:14px 10px;min-width:78px}
+  .cd-num{font-family:'Fraunces',serif;font-weight:900;font-size:2rem;color:#fff;line-height:1}
+  .cd-lbl{font-size:.64rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(252,243,246,.72);margin-top:6px}
+  .cd-tag{margin-top:20px;font-family:'Fraunces',serif;font-style:italic;color:var(--gold);font-size:1.05rem}
+
+  /* ---------- NAV (shared style) ---------- */
+  .sitenav{position:sticky;top:0;z-index:30;background:rgba(252,243,246,.93);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .sitenav .inner{display:flex;align-items:center;gap:6px;overflow-x:auto;padding:11px 22px;max-width:1040px;margin:0 auto}
+  .sitenav .brand{font-family:'Fraunces',serif;font-weight:900;font-size:.95rem;color:var(--plum);white-space:nowrap;margin-right:8px}
+  .sitenav a{white-space:nowrap;text-decoration:none;color:var(--ink);font-size:.8rem;font-weight:700;padding:7px 13px;border-radius:999px;transition:.2s}
+  .sitenav a:hover{background:var(--plum);color:#fff}
+  .sitenav a.home{background:var(--plum);color:#fff}
+
+  /* ---------- CARDS ---------- */
+  section{padding:54px 0;position:relative;z-index:2}
+  .intro{text-align:center;max-width:680px;margin:0 auto 8px}
+  .intro h2{font-size:clamp(1.7rem,4vw,2.4rem);margin-bottom:10px}
+  .intro h2 .u{background:linear-gradient(transparent 60%,rgba(224,123,160,.45) 60%)}
+  .intro p{color:#5a3c48;font-size:1.05rem}
+
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:34px}
+  @media(max-width:720px){.grid{grid-template-columns:1fr}}
+  .card{display:block;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);
+    border-radius:20px;padding:26px;box-shadow:0 18px 44px -32px var(--shadow);transition:transform .22s,box-shadow .22s;position:relative;overflow:hidden}
+  .card:hover{transform:translateY(-5px);box-shadow:0 26px 54px -28px var(--shadow)}
+  .card .ic{font-size:2.2rem;display:block;margin-bottom:12px}
+  .card h3{font-size:1.4rem;margin-bottom:6px}
+  .card p{font-size:.95rem;color:#5a3c48;margin-bottom:14px}
+  .card .go{font-weight:700;font-size:.85rem;color:var(--plum);letter-spacing:.02em}
+  .card .go::after{content:" →";transition:.2s}
+  .card:hover .go::after{content:"  →"}
+  .card .stripe{position:absolute;top:0;left:0;width:100%;height:5px}
+  .card.c1 .stripe{background:var(--plum)} .card.c1 .ic{filter:none}
+  .card.c2 .stripe{background:var(--coral)}
+  .card.c3 .stripe{background:var(--blue)}
+  .card.c4 .stripe{background:var(--gold)}
+  .card.c5 .stripe{background:var(--teal)}
+  .card.feat{grid-column:1 / -1;background:linear-gradient(135deg,#fff,#FBECF2)}
+  .card.feat .ic{font-size:2.6rem}
+
+  /* ---------- QUICK FACTS ---------- */
+  .facts{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .facts .row{display:grid;grid-template-columns:repeat(4,1fr);gap:0;text-align:center}
+  @media(max-width:620px){.facts .row{grid-template-columns:repeat(2,1fr)}}
+  .fact{padding:30px 14px;border-right:1px solid var(--line)}
+  .fact:last-child{border-right:none}
+  @media(max-width:620px){.fact:nth-child(2){border-right:none}.fact:nth-child(1),.fact:nth-child(2){border-bottom:1px solid var(--line)}}
+  .fact .big{font-family:'Fraunces',serif;font-weight:900;font-size:2rem;color:var(--plum)}
+  .fact .lbl{font-size:.8rem;color:#6b5560;margin-top:4px;font-weight:600}
+
+  footer{background:var(--night);color:rgba(252,243,246,.72);padding:40px 0;text-align:center;font-size:.86rem;position:relative;z-index:2}
+  footer b{color:var(--gold)}
+  footer .heart{color:var(--rose)}
+
+  /* ---------- PHOTO ---------- */
+  .portrait{margin:30px auto 0;width:128px;height:128px;border-radius:50%;
+    border:4px solid var(--gold);box-shadow:0 14px 38px -16px rgba(0,0,0,.5);
+    object-fit:cover;object-position:50% 22%;display:none;background:rgba(255,255,255,.1)}
+  .portrait.show{display:block;animation:rise .8s both}
+
+  @keyframes rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+  .reveal{animation:rise .7s both}
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <span class="balloon" style="width:46px;height:58px;background:var(--rose);top:60px;left:10%"></span>
+  <span class="balloon" style="width:34px;height:44px;background:var(--gold);top:120px;left:20%;animation-delay:1.5s"></span>
+  <span class="balloon" style="width:40px;height:52px;background:var(--coral);top:80px;right:12%;animation-delay:.8s"></span>
+  <span class="balloon" style="width:28px;height:38px;background:var(--blue);top:150px;right:24%;animation-delay:2.2s"></span>
+  <div class="wrap reveal">
+    <img class="portrait" id="portrait" src="img/nathalia.jpg" alt="Nathalia">
+    <span class="kicker">Nossa viagem dos sonhos</span>
+    <h1>Orlando <em>2026</em></h1>
+    <p class="sub">Os 15 anos da Nathalia 🎂</p>
+    <p class="dates">22 de novembro &nbsp;→&nbsp; 11 de dezembro · 4 viajantes · 6 parques</p>
+
+    <div class="countdown" id="cd">
+      <div class="cd-box"><div class="cd-num" id="cd-d">—</div><div class="cd-lbl">dias</div></div>
+      <div class="cd-box"><div class="cd-num" id="cd-h">—</div><div class="cd-lbl">horas</div></div>
+      <div class="cd-box"><div class="cd-num" id="cd-m">—</div><div class="cd-lbl">min</div></div>
+      <div class="cd-box"><div class="cd-num" id="cd-s">—</div><div class="cd-lbl">seg</div></div>
+    </div>
+    <p class="cd-tag" id="cd-tag">para embarcar ✈️</p>
+  </div>
+</header>
+
+<!-- ============ NAV ============ -->
+<nav class="sitenav">
+  <div class="inner">
+    <span class="brand">🏰 Orlando 2026</span>
+    <a class="home" href="index.html">Início</a>
+    <a href="plano-nathalia.html">Roteiro</a>
+    <a href="guia-parques.html">Parques</a>
+    <a href="dia-da-nathalia.html">Aniversário</a>
+    <a href="cartao-reservas.html">Reservas</a>
+    <a href="roteiro-orlando.html">Custos & Dicas</a>
+    <a href="album.html">Álbum</a>
+  </div>
+</nav>
+
+<!-- ============ CARDS ============ -->
+<section>
+  <div class="wrap">
+    <div class="intro reveal">
+      <h2>Tudo da viagem <span class="u">num lugar só</span></h2>
+      <p>Toque em qualquer cartão para abrir. Funciona no celular, dá para compartilhar o link e levar para todos os dias do passeio.</p>
+    </div>
+
+    <div class="grid">
+      <a class="card feat c1" href="dia-da-nathalia.html">
+        <span class="stripe"></span>
+        <span class="ic">🎂</span>
+        <h3>O Dia da Nathalia</h3>
+        <p>03/12 no Magic Kingdom — café com o Mickey, almoço no castelo da Cinderela e fogos à noite. O coração da viagem.</p>
+        <span class="go">Ver o plano do aniversário</span>
+      </a>
+
+      <a class="card c2" href="plano-nathalia.html">
+        <span class="stripe"></span>
+        <span class="ic">🗓️</span>
+        <h3>Roteiro Completo</h3>
+        <p>Os 20 dias, do embarque em Salvador ao retorno. Manhã, tarde e noite de cada dia.</p>
+        <span class="go">Abrir o roteiro</span>
+      </a>
+
+      <a class="card c3" href="guia-parques.html">
+        <span class="stripe"></span>
+        <span class="ic">🎢</span>
+        <h3>Guia dos Parques</h3>
+        <p>Hora a hora dos 6 parques: que horas chegar, o que atacar primeiro e onde almoçar.</p>
+        <span class="go">Ver o guia hora a hora</span>
+      </a>
+
+      <a class="card c4" href="cartao-reservas.html">
+        <span class="stripe"></span>
+        <span class="ic">🍽️</span>
+        <h3>Reservas Disney</h3>
+        <p>As datas exatas de reservar cada restaurante e os horários-alvo. Para não perder a mesa no castelo.</p>
+        <span class="go">Abrir o cartão de reservas</span>
+      </a>
+
+      <a class="card c1" href="album.html">
+        <span class="stripe"></span>
+        <span class="ic">📸</span>
+        <h3>Álbum da Viagem</h3>
+        <p>As fotos da aventura — adicione ao longo dos dias e reviva cada momento.</p>
+        <span class="go">Abrir o álbum</span>
+      </a>
+      <a class="card c5" href="roteiro-orlando.html">
+        <span class="stripe"></span>
+        <span class="ic">💰</span>
+        <h3>Custos, Hospedagem & Dicas</h3>
+        <p>Orçamento, onde se hospedar, aluguel de carro, ingressos e quando comprar tudo.</p>
+        <span class="go">Ver custos e estratégia</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUICK FACTS ============ -->
+<div class="facts">
+  <div class="wrap" style="padding:0">
+    <div class="row">
+      <div class="fact"><div class="big">20</div><div class="lbl">dias de viagem</div></div>
+      <div class="fact"><div class="big">6</div><div class="lbl">parques</div></div>
+      <div class="fact"><div class="big">4</div><div class="lbl">viajantes</div></div>
+      <div class="fact"><div class="big">03/12</div><div class="lbl">o grande dia 🎂</div></div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p>Feito com <span class="heart">♥</span> para os <b>15 anos da Nathalia</b> · Orlando 2026</p>
+    <p style="margin-top:6px;opacity:.7">22 de novembro a 11 de dezembro de 2026</p>
+  </div>
+</footer>
+
+<script>
+  // Embarque: 22/11/2026, 20:00 (horário de Salvador, UTC-3) — ajuste se quiser
+  const alvo = new Date("2026-11-22T18:00:00-03:00").getTime();
+  function tick(){
+    const agora = new Date().getTime();
+    let dif = alvo - agora;
+    const el = (id)=>document.getElementById(id);
+    if(dif <= 0){
+      el("cd-d").textContent="0";el("cd-h").textContent="0";
+      el("cd-m").textContent="0";el("cd-s").textContent="0";
+      el("cd-tag").textContent="A aventura começou! 🎉";
+      return;
+    }
+    const d=Math.floor(dif/86400000); dif%=86400000;
+    const h=Math.floor(dif/3600000); dif%=3600000;
+    const m=Math.floor(dif/60000); dif%=60000;
+    const s=Math.floor(dif/1000);
+    el("cd-d").textContent=d;
+    el("cd-h").textContent=String(h).padStart(2,"0");
+    el("cd-m").textContent=String(m).padStart(2,"0");
+    el("cd-s").textContent=String(s).padStart(2,"0");
+  }
+  tick(); setInterval(tick,1000);
+
+  // Mostra a foto da Nathalia só se o arquivo img/nathalia.jpg existir
+  (function(){
+    const p = document.getElementById("portrait");
+    if(!p) return;
+    p.addEventListener("load", ()=>{ if(p.naturalWidth>0) p.classList.add("show"); });
+    p.addEventListener("error", ()=>{ p.style.display="none"; });
+    // caso já esteja em cache
+    if(p.complete && p.naturalWidth>0) p.classList.add("show");
+  })();
+</script>
+
+</body>
+</html>
